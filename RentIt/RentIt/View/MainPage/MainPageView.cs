@@ -20,6 +20,7 @@ namespace RentIt
         private Rectangle orLab5;
         private Rectangle orLab4;
         private Rectangle orLab6;
+        private Rectangle orLab7;
         private Rectangle orBut1;
         private Rectangle orPan1;
         private float orLab1Size;
@@ -29,6 +30,7 @@ namespace RentIt
         private float orLab4Size;
         private float orLab5Size;
         private float orLab6Size;
+        private float orLab7Size;
 
         private float fontScale = 1.3f;
         private float fontScaleAdd = 1f;
@@ -45,11 +47,13 @@ namespace RentIt
             orLab5 = new Rectangle(kontak.Location, kontak.Size);
             orBut1 = new Rectangle(SignInBut.Location, SignInBut.Size);
             orLab6 = new Rectangle(loginMssg.Location, loginMssg.Size);
+            orLab7 = new Rectangle(sewaText.Location, sewaText.Size);
             orPan1 = new Rectangle(panelFasil.Location, panelFasil.Size);
             orLab1Size = mainText.Font.Size;
             orLab3Size = alamat.Font.Size;
             orLab5Size = kontak.Font.Size;
             orLab4Size = SignIn.Font.Size;
+            orLab7Size = sewaText.Font.Size;
             orLab6Size = loginMssg.Font.Size;
             orBut1Size = SignInBut.Font.Size;
             orPan1Size = panelFasil.Font.Size;
@@ -76,6 +80,7 @@ namespace RentIt
             ResizeControl(panelFasil, orPan1, orPan1Size);
             ResizeControl(SignIn, orLab4, orLab4Size);
             ResizeControl(loginMssg, orLab6, orLab6Size);
+            ResizeControl(sewaText, orLab7, orLab7Size);
         }
         private void ResizeControl(Control control, Rectangle orControl, float orFontSize)
         {
@@ -117,8 +122,8 @@ namespace RentIt
             {
                 newFontSize = orFontSize * ratio * fontScale;
             }
-            //Font newFont = new Font(control.Font.FontFamily, newFontSize, control.Font.Style);
-           // control.Font = newFont;
+            Font newFont = new Font(control.Font.FontFamily, newFontSize, control.Font.Style);
+            control.Font = newFont;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -246,6 +251,11 @@ namespace RentIt
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sewaText_Click(object sender, EventArgs e)
         {
 
         }

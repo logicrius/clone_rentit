@@ -40,6 +40,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +77,18 @@
     <Compile Include="View\Facility Page\FacilityPageView.Designer.cs">
       <DependentUpon>FacilityPageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\LaporKerusakan\laporKerusakan1View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LaporKerusakan\laporKerusakan1View.Designer.cs">
+      <DependentUpon>laporKerusakan1View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporKerusakan\laporKerusakan2View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LaporKerusakan\laporKerusakan2View.Designer.cs">
+      <DependentUpon>laporKerusakan2View.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage\MainPageView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,22 +121,34 @@
     <Compile Include="View\Menu\MenuView.Designer.cs">
       <DependentUpon>MenuView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Pembatalan 1\Pembatalan1View.cs">
+    <Compile Include="View\Other\otherView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Pembatalan 1\Pembatalan1View.Designer.cs">
+    <Compile Include="View\Other\otherView.Designer.cs">
+      <DependentUpon>otherView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pembatalan\Pembatalan1View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pembatalan\Pembatalan1View.Designer.cs">
       <DependentUpon>Pembatalan1View.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Pembayaran 1\Form1.cs">
+    <Compile Include="View\Pembatalan\pembatalan2View.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Pembayaran 1\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\Pembatalan\pembatalan2View.Designer.cs">
+      <DependentUpon>pembatalan2View.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Pembayaran 2\pembayaran2View.cs">
+    <Compile Include="View\Pembayaran\pembayaran1View.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Pembayaran 2\pembayaran2View.Designer.cs">
+    <Compile Include="View\Pembayaran\pembayaran1View.Designer.cs">
+      <DependentUpon>pembayaran1View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pembayaran\pembayaran2View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pembayaran\pembayaran2View.Designer.cs">
       <DependentUpon>pembayaran2View.cs</DependentUpon>
     </Compile>
     <Compile Include="View\RentPage\RentPageView.cs">
@@ -144,6 +169,12 @@
     <EmbeddedResource Include="View\Facility Page\FacilityPageView.resx">
       <DependentUpon>FacilityPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\LaporKerusakan\laporKerusakan1View.resx">
+      <DependentUpon>laporKerusakan1View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LaporKerusakan\laporKerusakan2View.resx">
+      <DependentUpon>laporKerusakan2View.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Login\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,13 +194,19 @@
     <EmbeddedResource Include="View\Menu\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Pembatalan 1\Pembatalan1View.resx">
+    <EmbeddedResource Include="View\Other\otherView.resx">
+      <DependentUpon>otherView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pembatalan\Pembatalan1View.resx">
       <DependentUpon>Pembatalan1View.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Pembayaran 1\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="View\Pembatalan\pembatalan2View.resx">
+      <DependentUpon>pembatalan2View.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Pembayaran 2\pembayaran2View.resx">
+    <EmbeddedResource Include="View\Pembayaran\pembayaran1View.resx">
+      <DependentUpon>pembayaran1View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pembayaran\pembayaran2View.resx">
       <DependentUpon>pembayaran2View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\RentPage\RentPageView.resx">
