@@ -1,4 +1,5 @@
 ﻿using RentIt.View.Menu;
+using RentIt.View.Other;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,6 +76,9 @@ namespace RentIt.View.Pembatalan_1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -94,7 +98,9 @@ namespace RentIt.View.Pembatalan_1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

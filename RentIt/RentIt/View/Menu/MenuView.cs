@@ -1,4 +1,5 @@
 ﻿using RentIt.CariGedungController;
+using RentIt.View.Other;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,13 @@ namespace RentIt.View.Menu
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
     }
 }

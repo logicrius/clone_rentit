@@ -1,4 +1,7 @@
-﻿using System;
+﻿using RentIt.View.LaporKerusakan;
+using RentIt.View.Menu;
+using RentIt.View.Pembatalan_1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +22,23 @@ namespace RentIt.View.Other
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Pembatalan1View pembatalan = new Pembatalan1View();
+            pembatalan.ShowDialog();
+        }
 
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            laporKerusakan1View kerusakan = new laporKerusakan1View();
+            kerusakan.ShowDialog();
+        }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
     }
 }

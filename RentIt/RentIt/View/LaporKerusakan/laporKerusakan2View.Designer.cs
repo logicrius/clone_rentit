@@ -37,24 +37,24 @@
             this.button1 = new System.Windows.Forms.Button();
             this.redBox = new System.Windows.Forms.Panel();
             this.bottomPanel = new System.Windows.Forms.Panel();
-            this.facility = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.twitter = new System.Windows.Forms.PictureBox();
             this.linkedin = new System.Windows.Forms.PictureBox();
             this.instagram = new System.Windows.Forms.PictureBox();
             this.facebook = new System.Windows.Forms.PictureBox();
             this.logoBottom = new System.Windows.Forms.PictureBox();
+            this.facility = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedPanel1.SuspendLayout();
             this.bottomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -103,6 +103,7 @@
             this.home.TabIndex = 24;
             this.home.Text = "Home";
             this.home.UseVisualStyleBackColor = true;
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // label1
             // 
@@ -126,6 +127,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "Others";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // redBox
             // 
@@ -149,46 +151,6 @@
             this.bottomPanel.Name = "bottomPanel";
             this.bottomPanel.Size = new System.Drawing.Size(1065, 81);
             this.bottomPanel.TabIndex = 26;
-            // 
-            // facility
-            // 
-            this.facility.BackColor = System.Drawing.SystemColors.Control;
-            this.facility.FlatAppearance.BorderSize = 0;
-            this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.facility.Location = new System.Drawing.Point(372, 57);
-            this.facility.Name = "facility";
-            this.facility.Size = new System.Drawing.Size(118, 43);
-            this.facility.TabIndex = 25;
-            this.facility.Text = "Facility";
-            this.facility.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(650, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 20);
-            this.textBox1.TabIndex = 22;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RentIt.Properties.Resources.babi;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 60);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(191, 34);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RentIt.Properties.Resources.PP;
-            this.pictureBox1.Location = new System.Drawing.Point(940, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
             // 
             // twitter
             // 
@@ -243,6 +205,46 @@
             this.logoBottom.TabIndex = 0;
             this.logoBottom.TabStop = false;
             // 
+            // facility
+            // 
+            this.facility.BackColor = System.Drawing.SystemColors.Control;
+            this.facility.FlatAppearance.BorderSize = 0;
+            this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.facility.Location = new System.Drawing.Point(372, 57);
+            this.facility.Name = "facility";
+            this.facility.Size = new System.Drawing.Size(118, 43);
+            this.facility.TabIndex = 25;
+            this.facility.Text = "Facility";
+            this.facility.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(650, 71);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.TabIndex = 22;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RentIt.Properties.Resources.babi;
+            this.pictureBox3.Location = new System.Drawing.Point(52, 60);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(191, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RentIt.Properties.Resources.PP;
+            this.pictureBox1.Location = new System.Drawing.Point(940, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // laporKerusakan2View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,13 +265,13 @@
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             this.bottomPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

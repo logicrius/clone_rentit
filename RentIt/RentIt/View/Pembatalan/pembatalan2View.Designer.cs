@@ -31,15 +31,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.redBox = new System.Windows.Forms.Panel();
             this.bottomPanel = new System.Windows.Forms.Panel();
-            this.facility = new System.Windows.Forms.Button();
-            this.home = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.twitter = new System.Windows.Forms.PictureBox();
             this.linkedin = new System.Windows.Forms.PictureBox();
             this.instagram = new System.Windows.Forms.PictureBox();
             this.facebook = new System.Windows.Forms.PictureBox();
             this.logoBottom = new System.Windows.Forms.PictureBox();
+            this.facility = new System.Windows.Forms.Button();
+            this.home = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +68,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Others";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // redBox
             // 
@@ -91,49 +92,6 @@
             this.bottomPanel.Name = "bottomPanel";
             this.bottomPanel.Size = new System.Drawing.Size(1065, 81);
             this.bottomPanel.TabIndex = 16;
-            // 
-            // facility
-            // 
-            this.facility.BackColor = System.Drawing.SystemColors.Control;
-            this.facility.FlatAppearance.BorderSize = 0;
-            this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.facility.Location = new System.Drawing.Point(372, 57);
-            this.facility.Name = "facility";
-            this.facility.Size = new System.Drawing.Size(118, 43);
-            this.facility.TabIndex = 15;
-            this.facility.Text = "Facility";
-            this.facility.UseVisualStyleBackColor = false;
-            // 
-            // home
-            // 
-            this.home.FlatAppearance.BorderSize = 0;
-            this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.home.Location = new System.Drawing.Point(254, 57);
-            this.home.Name = "home";
-            this.home.Size = new System.Drawing.Size(111, 43);
-            this.home.TabIndex = 14;
-            this.home.Text = "Home";
-            this.home.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 22F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(431, 140);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 44);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "PEMBATALAN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(650, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 20);
-            this.textBox1.TabIndex = 12;
             // 
             // twitter
             // 
@@ -187,6 +145,50 @@
             this.logoBottom.Size = new System.Drawing.Size(191, 50);
             this.logoBottom.TabIndex = 0;
             this.logoBottom.TabStop = false;
+            // 
+            // facility
+            // 
+            this.facility.BackColor = System.Drawing.SystemColors.Control;
+            this.facility.FlatAppearance.BorderSize = 0;
+            this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.facility.Location = new System.Drawing.Point(372, 57);
+            this.facility.Name = "facility";
+            this.facility.Size = new System.Drawing.Size(118, 43);
+            this.facility.TabIndex = 15;
+            this.facility.Text = "Facility";
+            this.facility.UseVisualStyleBackColor = false;
+            // 
+            // home
+            // 
+            this.home.FlatAppearance.BorderSize = 0;
+            this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.home.Location = new System.Drawing.Point(254, 57);
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(111, 43);
+            this.home.TabIndex = 14;
+            this.home.Text = "Home";
+            this.home.UseVisualStyleBackColor = true;
+            this.home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 22F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(431, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 44);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "PEMBATALAN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(650, 71);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.TabIndex = 12;
             // 
             // pictureBox3
             // 

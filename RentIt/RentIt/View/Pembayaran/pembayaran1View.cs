@@ -1,4 +1,5 @@
 ﻿using RentIt.View.Menu;
+using RentIt.View.Other;
 using RentIt.View.Pembayaran_2;
 using System;
 using System.Collections.Generic;
@@ -28,11 +29,16 @@ namespace RentIt.View.Pembayaran_1
 
         private void home_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)

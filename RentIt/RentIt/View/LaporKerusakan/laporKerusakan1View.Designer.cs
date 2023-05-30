@@ -30,12 +30,18 @@
         {
             this.button3 = new System.Windows.Forms.Button();
             this.Bawah = new System.Windows.Forms.Panel();
+            this.Twit = new System.Windows.Forms.PictureBox();
+            this.Linked = new System.Windows.Forms.PictureBox();
+            this.Insta = new System.Windows.Forms.PictureBox();
+            this.Face = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dragfile = new System.Windows.Forms.ListBox();
             this.docacc = new System.Windows.Forms.Label();
             this.accfile = new System.Windows.Forms.Label();
             this.Batal = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Instruksi = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.UPdok = new System.Windows.Forms.Label();
             this.batalkan = new System.Windows.Forms.Label();
@@ -49,25 +55,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.GKU = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Twit = new System.Windows.Forms.PictureBox();
-            this.Linked = new System.Windows.Forms.PictureBox();
-            this.Insta = new System.Windows.Forms.PictureBox();
-            this.Face = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Bawah.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GKU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Twit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Linked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Insta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Face)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GKU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,6 +83,7 @@
             this.button3.TabIndex = 36;
             this.button3.Text = "Others";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Bawah
             // 
@@ -97,6 +98,61 @@
             this.Bawah.Name = "Bawah";
             this.Bawah.Size = new System.Drawing.Size(999, 81);
             this.Bawah.TabIndex = 35;
+            // 
+            // Twit
+            // 
+            this.Twit.Image = global::RentIt.Properties.Resources.twit;
+            this.Twit.Location = new System.Drawing.Point(916, 26);
+            this.Twit.Margin = new System.Windows.Forms.Padding(2);
+            this.Twit.Name = "Twit";
+            this.Twit.Size = new System.Drawing.Size(30, 28);
+            this.Twit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Twit.TabIndex = 4;
+            this.Twit.TabStop = false;
+            // 
+            // Linked
+            // 
+            this.Linked.Image = global::RentIt.Properties.Resources.Linked;
+            this.Linked.Location = new System.Drawing.Point(871, 26);
+            this.Linked.Margin = new System.Windows.Forms.Padding(2);
+            this.Linked.Name = "Linked";
+            this.Linked.Size = new System.Drawing.Size(30, 28);
+            this.Linked.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Linked.TabIndex = 3;
+            this.Linked.TabStop = false;
+            // 
+            // Insta
+            // 
+            this.Insta.Image = global::RentIt.Properties.Resources.insta;
+            this.Insta.Location = new System.Drawing.Point(823, 26);
+            this.Insta.Margin = new System.Windows.Forms.Padding(2);
+            this.Insta.Name = "Insta";
+            this.Insta.Size = new System.Drawing.Size(30, 28);
+            this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Insta.TabIndex = 2;
+            this.Insta.TabStop = false;
+            // 
+            // Face
+            // 
+            this.Face.Image = global::RentIt.Properties.Resources.face;
+            this.Face.Location = new System.Drawing.Point(779, 26);
+            this.Face.Margin = new System.Windows.Forms.Padding(2);
+            this.Face.Name = "Face";
+            this.Face.Size = new System.Drawing.Size(30, 28);
+            this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Face.TabIndex = 1;
+            this.Face.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RentIt.Properties.Resources.babi;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 24);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // dragfile
             // 
@@ -164,6 +220,17 @@
             this.Instruksi.Size = new System.Drawing.Size(262, 17);
             this.Instruksi.TabIndex = 2;
             this.Instruksi.Text = "You can drag and drop files here to add them.";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::RentIt.Properties.Resources.dunlut;
+            this.pictureBox2.Location = new System.Drawing.Point(258, 61);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -258,6 +325,7 @@
             this.button2.TabIndex = 27;
             this.button2.Text = "Home";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -307,72 +375,6 @@
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
             // 
-            // Twit
-            // 
-            this.Twit.Image = global::RentIt.Properties.Resources.twit;
-            this.Twit.Location = new System.Drawing.Point(916, 26);
-            this.Twit.Margin = new System.Windows.Forms.Padding(2);
-            this.Twit.Name = "Twit";
-            this.Twit.Size = new System.Drawing.Size(30, 28);
-            this.Twit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Twit.TabIndex = 4;
-            this.Twit.TabStop = false;
-            // 
-            // Linked
-            // 
-            this.Linked.Image = global::RentIt.Properties.Resources.Linked;
-            this.Linked.Location = new System.Drawing.Point(871, 26);
-            this.Linked.Margin = new System.Windows.Forms.Padding(2);
-            this.Linked.Name = "Linked";
-            this.Linked.Size = new System.Drawing.Size(30, 28);
-            this.Linked.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Linked.TabIndex = 3;
-            this.Linked.TabStop = false;
-            // 
-            // Insta
-            // 
-            this.Insta.Image = global::RentIt.Properties.Resources.insta;
-            this.Insta.Location = new System.Drawing.Point(823, 26);
-            this.Insta.Margin = new System.Windows.Forms.Padding(2);
-            this.Insta.Name = "Insta";
-            this.Insta.Size = new System.Drawing.Size(30, 28);
-            this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Insta.TabIndex = 2;
-            this.Insta.TabStop = false;
-            // 
-            // Face
-            // 
-            this.Face.Image = global::RentIt.Properties.Resources.face;
-            this.Face.Location = new System.Drawing.Point(779, 26);
-            this.Face.Margin = new System.Windows.Forms.Padding(2);
-            this.Face.Name = "Face";
-            this.Face.Size = new System.Drawing.Size(30, 28);
-            this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Face.TabIndex = 1;
-            this.Face.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RentIt.Properties.Resources.babi;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::RentIt.Properties.Resources.dunlut;
-            this.pictureBox2.Location = new System.Drawing.Point(258, 61);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::RentIt.Properties.Resources.babi;
@@ -383,7 +385,7 @@
             this.pictureBox5.TabIndex = 26;
             this.pictureBox5.TabStop = false;
             // 
-            // laporKerusakanView
+            // laporKerusakan1View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -401,24 +403,24 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "laporKerusakanView";
+            this.Name = "laporKerusakan1View";
             this.Text = "laporKerusakanView";
             this.Bawah.ResumeLayout(false);
             this.Bawah.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Twit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Linked)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Insta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Face)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GKU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Twit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Linked)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Insta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Face)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

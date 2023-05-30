@@ -32,6 +32,11 @@
             this.home = new System.Windows.Forms.Button();
             this.facility = new System.Windows.Forms.Button();
             this.bottomPanel = new System.Windows.Forms.Panel();
+            this.twitter = new System.Windows.Forms.PictureBox();
+            this.linkedin = new System.Windows.Forms.PictureBox();
+            this.instagram = new System.Windows.Forms.PictureBox();
+            this.facebook = new System.Windows.Forms.PictureBox();
+            this.logoBottom = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new RoundedPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,20 +47,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.redBox = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.twitter = new System.Windows.Forms.PictureBox();
-            this.linkedin = new System.Windows.Forms.PictureBox();
-            this.instagram = new System.Windows.Forms.PictureBox();
-            this.facebook = new System.Windows.Forms.PictureBox();
-            this.logoBottom = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bottomPanel.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).BeginInit();
+            this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -107,6 +107,63 @@
             this.bottomPanel.Name = "bottomPanel";
             this.bottomPanel.Size = new System.Drawing.Size(1065, 81);
             this.bottomPanel.TabIndex = 6;
+            // 
+            // twitter
+            // 
+            this.twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.twitter.Image = global::RentIt.Properties.Resources.twit;
+            this.twitter.Location = new System.Drawing.Point(998, 25);
+            this.twitter.Name = "twitter";
+            this.twitter.Size = new System.Drawing.Size(30, 28);
+            this.twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twitter.TabIndex = 4;
+            this.twitter.TabStop = false;
+            this.twitter.Click += new System.EventHandler(this.twitter_Click);
+            // 
+            // linkedin
+            // 
+            this.linkedin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkedin.Image = global::RentIt.Properties.Resources.Linked;
+            this.linkedin.Location = new System.Drawing.Point(940, 25);
+            this.linkedin.Name = "linkedin";
+            this.linkedin.Size = new System.Drawing.Size(30, 28);
+            this.linkedin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linkedin.TabIndex = 3;
+            this.linkedin.TabStop = false;
+            this.linkedin.Click += new System.EventHandler(this.linkedin_Click);
+            // 
+            // instagram
+            // 
+            this.instagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.instagram.Image = global::RentIt.Properties.Resources.insta;
+            this.instagram.Location = new System.Drawing.Point(884, 25);
+            this.instagram.Name = "instagram";
+            this.instagram.Size = new System.Drawing.Size(30, 28);
+            this.instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.instagram.TabIndex = 2;
+            this.instagram.TabStop = false;
+            this.instagram.Click += new System.EventHandler(this.instagram_Click);
+            // 
+            // facebook
+            // 
+            this.facebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.facebook.Image = global::RentIt.Properties.Resources.face;
+            this.facebook.Location = new System.Drawing.Point(823, 25);
+            this.facebook.Name = "facebook";
+            this.facebook.Size = new System.Drawing.Size(30, 28);
+            this.facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.facebook.TabIndex = 1;
+            this.facebook.TabStop = false;
+            this.facebook.Click += new System.EventHandler(this.facebook_Click);
+            // 
+            // logoBottom
+            // 
+            this.logoBottom.Image = global::RentIt.Properties.Resources.babi;
+            this.logoBottom.Location = new System.Drawing.Point(12, 19);
+            this.logoBottom.Name = "logoBottom";
+            this.logoBottom.Size = new System.Drawing.Size(191, 50);
+            this.logoBottom.TabIndex = 0;
+            this.logoBottom.TabStop = false;
             // 
             // label1
             // 
@@ -215,63 +272,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Others";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // twitter
-            // 
-            this.twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.twitter.Image = global::RentIt.Properties.Resources.twit;
-            this.twitter.Location = new System.Drawing.Point(998, 25);
-            this.twitter.Name = "twitter";
-            this.twitter.Size = new System.Drawing.Size(30, 28);
-            this.twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.twitter.TabIndex = 4;
-            this.twitter.TabStop = false;
-            this.twitter.Click += new System.EventHandler(this.twitter_Click);
-            // 
-            // linkedin
-            // 
-            this.linkedin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkedin.Image = global::RentIt.Properties.Resources.Linked;
-            this.linkedin.Location = new System.Drawing.Point(940, 25);
-            this.linkedin.Name = "linkedin";
-            this.linkedin.Size = new System.Drawing.Size(30, 28);
-            this.linkedin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.linkedin.TabIndex = 3;
-            this.linkedin.TabStop = false;
-            this.linkedin.Click += new System.EventHandler(this.linkedin_Click);
-            // 
-            // instagram
-            // 
-            this.instagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.instagram.Image = global::RentIt.Properties.Resources.insta;
-            this.instagram.Location = new System.Drawing.Point(884, 25);
-            this.instagram.Name = "instagram";
-            this.instagram.Size = new System.Drawing.Size(30, 28);
-            this.instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.instagram.TabIndex = 2;
-            this.instagram.TabStop = false;
-            this.instagram.Click += new System.EventHandler(this.instagram_Click);
-            // 
-            // facebook
-            // 
-            this.facebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.facebook.Image = global::RentIt.Properties.Resources.face;
-            this.facebook.Location = new System.Drawing.Point(823, 25);
-            this.facebook.Name = "facebook";
-            this.facebook.Size = new System.Drawing.Size(30, 28);
-            this.facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.facebook.TabIndex = 1;
-            this.facebook.TabStop = false;
-            this.facebook.Click += new System.EventHandler(this.facebook_Click);
-            // 
-            // logoBottom
-            // 
-            this.logoBottom.Image = global::RentIt.Properties.Resources.babi;
-            this.logoBottom.Location = new System.Drawing.Point(12, 19);
-            this.logoBottom.Name = "logoBottom";
-            this.logoBottom.Size = new System.Drawing.Size(191, 50);
-            this.logoBottom.TabIndex = 0;
-            this.logoBottom.TabStop = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
@@ -311,13 +312,13 @@
             this.Name = "pembayaran2View";
             this.Text = "pembayaran2View";
             this.bottomPanel.ResumeLayout(false);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).EndInit();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

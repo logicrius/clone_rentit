@@ -1,4 +1,5 @@
 ﻿using RentIt.View.Facility_Page;
+using RentIt.View.Menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,14 @@ namespace RentIt.CariGedungController
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+
+            MenuView menuView = this.ParentForm as MenuView;
+
+            if (menuView != null)
+            {
+                menuView.Hide();
+            }
+
             FacilityPageView facilityPageView = new FacilityPageView();
             facilityPageView.ShowDialog();
         }

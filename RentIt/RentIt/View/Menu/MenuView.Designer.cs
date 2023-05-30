@@ -37,14 +37,14 @@
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -210,40 +210,6 @@
             this.panel2.Size = new System.Drawing.Size(1244, 72);
             this.panel2.TabIndex = 13;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(40, 479);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1158, 149);
-            this.panel3.TabIndex = 14;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(40, 76);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1158, 619);
-            this.panel4.TabIndex = 15;
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.guna2Button7.CheckedState.ForeColor = System.Drawing.Color.Red;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button7.HoverState.ForeColor = System.Drawing.Color.Red;
-            this.guna2Button7.Location = new System.Drawing.Point(526, 43);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(83, 27);
-            this.guna2Button7.TabIndex = 16;
-            this.guna2Button7.Text = "Others";
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::RentIt.Properties.Resources.face;
@@ -293,6 +259,41 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(40, 479);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1158, 149);
+            this.panel3.TabIndex = 14;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(40, 76);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1158, 619);
+            this.panel4.TabIndex = 15;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.guna2Button7.CheckedState.ForeColor = System.Drawing.Color.Red;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.guna2Button7.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button7.HoverState.ForeColor = System.Drawing.Color.Red;
+            this.guna2Button7.Location = new System.Drawing.Point(526, 43);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.Size = new System.Drawing.Size(83, 27);
+            this.guna2Button7.TabIndex = 16;
+            this.guna2Button7.Text = "Others";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // pictureBox4
             // 

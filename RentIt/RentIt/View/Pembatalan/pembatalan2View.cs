@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RentIt.View.Menu;
+using RentIt.View.Other;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +27,20 @@ namespace RentIt.View.Pembatalan
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
+        }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using RentIt.View.RentPage;
+﻿using RentIt.View.Menu;
+using RentIt.View.Other;
+using RentIt.View.RentPage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +56,16 @@ namespace RentIt.View.Facility_Page
 
         private void home_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
     }
 }

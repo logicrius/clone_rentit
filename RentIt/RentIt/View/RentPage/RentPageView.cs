@@ -1,4 +1,6 @@
-﻿using RentIt.View.Pembayaran_1;
+﻿using RentIt.View.Menu;
+using RentIt.View.Other;
+using RentIt.View.Pembayaran_1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,12 +71,16 @@ namespace RentIt.View.RentPage
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
 
         private void label14_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

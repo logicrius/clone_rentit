@@ -1,4 +1,5 @@
 ﻿using RentIt.View.Menu;
+using RentIt.View.Other;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,9 @@ namespace RentIt.View.Pembayaran_2
 
         private void home_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            MenuView mainview = new MenuView();
+            mainview.ShowDialog();
         }
 
         private void facility_Click(object sender, EventArgs e)
@@ -45,6 +49,13 @@ namespace RentIt.View.Pembayaran_2
         private void twitter_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://twitter.com/UnivTelkom?s=20");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            otherView otherview = new otherView();
+            otherview.ShowDialog();
         }
     }
 }

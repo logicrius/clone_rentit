@@ -168,6 +168,7 @@
             this.home.TabIndex = 14;
             this.home.Text = "Home";
             this.home.UseVisualStyleBackColor = true;
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // facility
             // 
@@ -221,6 +222,7 @@
             this.roundedButton2.TabIndex = 20;
             this.roundedButton2.Text = "LAPOR\r\nKERUSAKAN\r\n";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // label1
             // 
