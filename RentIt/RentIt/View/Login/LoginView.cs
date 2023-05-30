@@ -1,4 +1,5 @@
-﻿using RentIt.View.Menu;
+﻿using RentIt.Model;
+using RentIt.View.Menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +39,7 @@ namespace RentIt
         private Rectangle orPic1;
         private Rectangle orPic2;
 
+
         private float fontScale = 1.3f;
         public LoginView()
         {
@@ -57,6 +59,7 @@ namespace RentIt
             ResizeControl(errorMsgPass, orLab4, orSizeLab4);
 
         }
+        // Melakukan kalkulasi untuk membuat interface menjadi interactive dengan size.
         private void ResizeControl(Control control, Rectangle orControl, [Optional] float orFontSize)
         {
             float x = (float)this.ClientRectangle.Width / (float)orForm.Width;
@@ -137,6 +140,7 @@ namespace RentIt
                 }
                 userInput.ForeColor = Color.Black;
                 errorMsgUser.Visible = false;
+                
             }
             catch {
 
@@ -154,17 +158,20 @@ namespace RentIt
                 {
                     throw new Exception("User input is not a valid Telkom University email address.");
                 }
-
+                this.Hide();
+                Login login = new Login();
+                login.PerformLogin(userInput.Text, passInput.Text);
+                if (login.isLogged == false)
+                {
+                    errorMsgUser.Text = "Invalid username or password!";
+                    errorMsgUser.Visible = true;
+                }
             }
             catch (Exception ex)
             {
                 errorMsgUser.Text = ex.Message;
                 errorMsgUser.Visible = true;
             }
-            this.Hide();
-            MenuView mv = new MenuView();
-            mv.ShowDialog();
-
         }
 
         private void passInput_TextChanged(object sender, EventArgs e)
@@ -184,10 +191,9 @@ namespace RentIt
 
             }
         }
-
-        private void errorMsgUser_Click(object sender, EventArgs e)
+        public void errorMsgUser_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void errorMsgPass_Click(object sender, EventArgs e)

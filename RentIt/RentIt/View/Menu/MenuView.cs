@@ -17,6 +17,8 @@ namespace RentIt.View.Menu
         public MenuView()
         {
             InitializeComponent();
+            Kelas kelas = new Kelas();
+            addUserControls(kelas);
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {

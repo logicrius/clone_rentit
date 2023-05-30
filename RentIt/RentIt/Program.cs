@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace RentIt
 {
@@ -21,7 +22,7 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new MainPageView());
+            Application.Run(new LoginView());
         }
     }
 }
