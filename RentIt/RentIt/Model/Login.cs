@@ -27,7 +27,14 @@ namespace RentIt.Model
 
                     if (count > 0)
                     {
-                        new MenuView().ShowDialog();
+                        MenuView menuView = new MenuView();
+                        menuView.Show();
+                        // Hide form LoginView.
+                        Form loginForm = Application.OpenForms["LoginView"];
+                        if (loginForm != null)
+                        {
+                            loginForm.Hide();
+                        }
                     }
                     else
                     {

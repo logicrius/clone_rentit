@@ -22,7 +22,7 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new LoginView());
+            Application.Run(new MainPageView());
         }
     }
 }

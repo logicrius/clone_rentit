@@ -58,7 +58,6 @@ namespace RentIt.CariGedungController
             FacilityPageView facilityPageView = new FacilityPageView();
             facilityPageView.ShowDialog();
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 

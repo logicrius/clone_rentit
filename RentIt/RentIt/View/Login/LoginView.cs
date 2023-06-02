@@ -158,7 +158,6 @@ namespace RentIt
                 {
                     throw new Exception("User input is not a valid Telkom University email address.");
                 }
-                this.Hide();
                 Login login = new Login();
                 login.PerformLogin(userInput.Text, passInput.Text);
                 if (login.isLogged == false)
