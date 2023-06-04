@@ -48,9 +48,9 @@
             this.mainText = new System.Windows.Forms.Label();
             this.backgroundPic = new RoundedPictureBox();
             this.home = new System.Windows.Forms.Button();
-            this.logoTop = new System.Windows.Forms.PictureBox();
-            this.logoTUTop = new System.Windows.Forms.PictureBox();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.logoTUTop = new System.Windows.Forms.PictureBox();
+            this.logoTop = new System.Windows.Forms.PictureBox();
             this.facility = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.kelas = new System.Windows.Forms.PictureBox();
@@ -68,9 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoTop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoTUTop)).BeginInit();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoTUTop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gedung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.olahraga)).BeginInit();
@@ -100,11 +100,11 @@
             // 
             this.loginMssg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginMssg.AutoSize = true;
-            this.loginMssg.Font = new System.Drawing.Font("Open Sans Light", 7F);
+            this.loginMssg.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.loginMssg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loginMssg.Location = new System.Drawing.Point(359, 212);
             this.loginMssg.Name = "loginMssg";
-            this.loginMssg.Size = new System.Drawing.Size(141, 14);
+            this.loginMssg.Size = new System.Drawing.Size(145, 13);
             this.loginMssg.TabIndex = 8;
             this.loginMssg.Text = "Log in using your account on:";
             this.loginMssg.Click += new System.EventHandler(this.label4_Click);
@@ -114,11 +114,11 @@
             this.SignIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SignIn.AutoSize = true;
             this.SignIn.BackColor = System.Drawing.Color.IndianRed;
-            this.SignIn.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.SignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SignIn.Location = new System.Drawing.Point(509, 165);
             this.SignIn.Name = "SignIn";
-            this.SignIn.Size = new System.Drawing.Size(61, 23);
+            this.SignIn.Size = new System.Drawing.Size(66, 20);
             this.SignIn.TabIndex = 7;
             this.SignIn.Text = "Sign In";
             this.SignIn.Click += new System.EventHandler(this.SignIn_Click);
@@ -202,7 +202,7 @@
             this.SignInBut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SignInBut.FlatAppearance.BorderSize = 0;
             this.SignInBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInBut.Font = new System.Drawing.Font("Open Sans Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInBut.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.SignInBut.Image = global::RentIt.Properties.Resources.Untitled_design2;
             this.SignInBut.Location = new System.Drawing.Point(338, 214);
@@ -220,11 +220,11 @@
             this.kontak.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.kontak.AutoSize = true;
             this.kontak.BackColor = System.Drawing.Color.White;
-            this.kontak.Font = new System.Drawing.Font("Open Sans", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kontak.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kontak.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.kontak.Location = new System.Drawing.Point(852, 392);
             this.kontak.Name = "kontak";
-            this.kontak.Size = new System.Drawing.Size(197, 60);
+            this.kontak.Size = new System.Drawing.Size(177, 45);
             this.kontak.TabIndex = 5;
             this.kontak.Text = "Contact Us\r\n\r\nE-Mail: clove@telkomuniversity.ac.id\r\nWhatsApp Khusus Dosen: +62 82" +
     "1-1666-3563\r\nWhatsApp Khusus Mahasiswa: +62 812-2200-1813";
@@ -263,10 +263,10 @@
             // 
             this.sewaText.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sewaText.AutoSize = true;
-            this.sewaText.Font = new System.Drawing.Font("Open Sans ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sewaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sewaText.Location = new System.Drawing.Point(21, 16);
             this.sewaText.Name = "sewaText";
-            this.sewaText.Size = new System.Drawing.Size(210, 15);
+            this.sewaText.Size = new System.Drawing.Size(215, 13);
             this.sewaText.TabIndex = 3;
             this.sewaText.Text = "Jenis Fasilitas Yang Bisa Anda Sewa";
             this.sewaText.Click += new System.EventHandler(this.sewaText_Click);
@@ -308,7 +308,7 @@
             // 
             this.mainText.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainText.BackColor = System.Drawing.Color.IndianRed;
-            this.mainText.Font = new System.Drawing.Font("Open Sans", 20F, System.Drawing.FontStyle.Bold);
+            this.mainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.mainText.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mainText.Location = new System.Drawing.Point(130, 83);
             this.mainText.Name = "mainText";
@@ -335,7 +335,7 @@
             this.home.Dock = System.Windows.Forms.DockStyle.Left;
             this.home.FlatAppearance.BorderSize = 0;
             this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.home.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.home.Location = new System.Drawing.Point(0, 0);
             this.home.Name = "home";
             this.home.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
@@ -344,31 +344,6 @@
             this.home.Text = "Home";
             this.home.UseVisualStyleBackColor = true;
             this.home.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // logoTop
-            // 
-            this.logoTop.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.logoTop.Image = global::RentIt.Properties.Resources.babi;
-            this.logoTop.Location = new System.Drawing.Point(523, 1);
-            this.logoTop.Name = "logoTop";
-            this.logoTop.Size = new System.Drawing.Size(189, 36);
-            this.logoTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.logoTop.TabIndex = 2;
-            this.logoTop.TabStop = false;
-            this.logoTop.Click += new System.EventHandler(this.logoTop_Click);
-            // 
-            // logoTUTop
-            // 
-            this.logoTUTop.Dock = System.Windows.Forms.DockStyle.Right;
-            this.logoTUTop.Image = global::RentIt.Properties.Resources.Logo_Telkom_University_potrait;
-            this.logoTUTop.Location = new System.Drawing.Point(1080, 0);
-            this.logoTUTop.Name = "logoTUTop";
-            this.logoTUTop.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.logoTUTop.Size = new System.Drawing.Size(62, 43);
-            this.logoTUTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoTUTop.TabIndex = 0;
-            this.logoTUTop.TabStop = false;
-            this.logoTUTop.Click += new System.EventHandler(this.logoTUTop_Click);
             // 
             // topPanel
             // 
@@ -383,13 +358,38 @@
             this.topPanel.TabIndex = 0;
             this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // logoTUTop
+            // 
+            this.logoTUTop.Dock = System.Windows.Forms.DockStyle.Right;
+            this.logoTUTop.Image = global::RentIt.Properties.Resources.Logo_Telkom_University_potrait;
+            this.logoTUTop.Location = new System.Drawing.Point(1080, 0);
+            this.logoTUTop.Name = "logoTUTop";
+            this.logoTUTop.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.logoTUTop.Size = new System.Drawing.Size(62, 43);
+            this.logoTUTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoTUTop.TabIndex = 0;
+            this.logoTUTop.TabStop = false;
+            this.logoTUTop.Click += new System.EventHandler(this.logoTUTop_Click);
+            // 
+            // logoTop
+            // 
+            this.logoTop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.logoTop.Image = global::RentIt.Properties.Resources.babi;
+            this.logoTop.Location = new System.Drawing.Point(523, 1);
+            this.logoTop.Name = "logoTop";
+            this.logoTop.Size = new System.Drawing.Size(189, 36);
+            this.logoTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logoTop.TabIndex = 2;
+            this.logoTop.TabStop = false;
+            this.logoTop.Click += new System.EventHandler(this.logoTop_Click);
+            // 
             // facility
             // 
             this.facility.BackColor = System.Drawing.SystemColors.Control;
             this.facility.Dock = System.Windows.Forms.DockStyle.Left;
             this.facility.FlatAppearance.BorderSize = 0;
             this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.facility.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.facility.Location = new System.Drawing.Point(111, 0);
             this.facility.Name = "facility";
             this.facility.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
@@ -402,7 +402,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(31, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -475,10 +475,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoTop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoTUTop)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoTUTop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gedung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.olahraga)).EndInit();

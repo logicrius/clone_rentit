@@ -136,6 +136,30 @@
     </Compile>
     <Compile Include="Model\dbConnection.cs" />
     <Compile Include="Model\Login.cs" />
+    <Compile Include="View\Admin_HomePage\Admin_HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin_HomePage\Admin_HomePage.Designer.cs">
+      <DependentUpon>Admin_HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakan.Designer.cs">
+      <DependentUpon>Admin_LaporanKerusakan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin_LaporanKerusakan\Proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin_LaporanKerusakan\Proposal.Designer.cs">
+      <DependentUpon>Proposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin_Proposal\Admin_Proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin_Proposal\Admin_Proposal.Designer.cs">
+      <DependentUpon>Admin_Proposal.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Facility Page\FacilityPageView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +254,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CariGedungController\Olahraga.resx">
       <DependentUpon>Olahraga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin_HomePage\Admin_HomePage.resx">
+      <DependentUpon>Admin_HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakan.resx">
+      <DependentUpon>Admin_LaporanKerusakan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin_LaporanKerusakan\Proposal.resx">
+      <DependentUpon>Proposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin_Proposal\Admin_Proposal.resx">
+      <DependentUpon>Admin_Proposal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Facility Page\FacilityPageView.resx">
       <DependentUpon>FacilityPageView.cs</DependentUpon>

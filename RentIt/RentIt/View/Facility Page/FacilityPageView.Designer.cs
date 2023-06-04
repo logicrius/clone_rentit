@@ -90,10 +90,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 35);
+            this.label1.Size = new System.Drawing.Size(210, 29);
             this.label1.TabIndex = 16;
             this.label1.Text = "Available Facility";
             // 
@@ -102,7 +102,7 @@
             this.facility.BackColor = System.Drawing.SystemColors.Control;
             this.facility.FlatAppearance.BorderSize = 0;
             this.facility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.facility.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.facility.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.facility.Location = new System.Drawing.Point(386, 72);
             this.facility.Name = "facility";
             this.facility.Size = new System.Drawing.Size(118, 50);
@@ -114,7 +114,7 @@
             // 
             this.home.FlatAppearance.BorderSize = 0;
             this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.home.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.home.Location = new System.Drawing.Point(282, 72);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(111, 50);
@@ -127,7 +127,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(697, 89);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 22);
+            this.textBox1.Size = new System.Drawing.Size(323, 20);
             this.textBox1.TabIndex = 12;
             // 
             // textBox_GKU
@@ -143,10 +143,10 @@
             // textBox_jUDULgku
             // 
             this.textBox_jUDULgku.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_jUDULgku.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_jUDULgku.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_jUDULgku.Location = new System.Drawing.Point(38, 408);
             this.textBox_jUDULgku.Name = "textBox_jUDULgku";
-            this.textBox_jUDULgku.Size = new System.Drawing.Size(224, 26);
+            this.textBox_jUDULgku.Size = new System.Drawing.Size(224, 22);
             this.textBox_jUDULgku.TabIndex = 20;
             this.textBox_jUDULgku.Text = "Gedung Kuliah Umum";
             this.textBox_jUDULgku.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -245,7 +245,7 @@
             // textBoxTUCH
             // 
             this.textBoxTUCH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTUCH.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTUCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTUCH.Location = new System.Drawing.Point(315, 408);
             this.textBoxTUCH.Multiline = true;
             this.textBoxTUCH.Name = "textBoxTUCH";
@@ -278,10 +278,10 @@
             // textBox_judulAuditorium
             // 
             this.textBox_judulAuditorium.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_judulAuditorium.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_judulAuditorium.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_judulAuditorium.Location = new System.Drawing.Point(594, 408);
             this.textBox_judulAuditorium.Name = "textBox_judulAuditorium";
-            this.textBox_judulAuditorium.Size = new System.Drawing.Size(224, 26);
+            this.textBox_judulAuditorium.Size = new System.Drawing.Size(224, 22);
             this.textBox_judulAuditorium.TabIndex = 29;
             this.textBox_judulAuditorium.Text = "Auditorium";
             this.textBox_judulAuditorium.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -309,10 +309,10 @@
             // textBox_JudulStudentCenter
             // 
             this.textBox_JudulStudentCenter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_JudulStudentCenter.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_JudulStudentCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JudulStudentCenter.Location = new System.Drawing.Point(865, 408);
             this.textBox_JudulStudentCenter.Name = "textBox_JudulStudentCenter";
-            this.textBox_JudulStudentCenter.Size = new System.Drawing.Size(224, 26);
+            this.textBox_JudulStudentCenter.Size = new System.Drawing.Size(224, 22);
             this.textBox_JudulStudentCenter.TabIndex = 33;
             this.textBox_JudulStudentCenter.Text = "Student Center";
             this.textBox_JudulStudentCenter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -341,10 +341,10 @@
             // textBox_TennisCourt
             // 
             this.textBox_TennisCourt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_TennisCourt.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_TennisCourt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_TennisCourt.Location = new System.Drawing.Point(1134, 408);
             this.textBox_TennisCourt.Name = "textBox_TennisCourt";
-            this.textBox_TennisCourt.Size = new System.Drawing.Size(224, 26);
+            this.textBox_TennisCourt.Size = new System.Drawing.Size(224, 22);
             this.textBox_TennisCourt.TabIndex = 37;
             this.textBox_TennisCourt.Text = "Tennis Court";
             this.textBox_TennisCourt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -363,7 +363,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 13F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button1.Location = new System.Drawing.Point(510, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 50);
@@ -445,7 +445,7 @@
             // 
             // FacilityPageView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1200, 787);
@@ -478,7 +478,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FacilityPageView";
             this.Text = "Facility Page";
             this.bottomPanel.ResumeLayout(false);
