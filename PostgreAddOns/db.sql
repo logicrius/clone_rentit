@@ -1,32 +1,57 @@
-CREATE TABLE userLogin (
-	username VARCHAR(150) primary key,
-	passowrd VARCHAR(150),
-	rentedBuilding NUMERIC
+CREATE TABLE Peminjam (
+	nim varchar(10) primary key NOT NULL,
+	email varchar(50) NOT NULL,
+	password VARCHAR(150) NOT NULL,
+	nama varchar(50),
+	jurusan varchar (50),
+	nomor_tlp varchar (12)
 );
 
-CREATE TABLE rentedBuilding (
-	building_Id NUMERIC primary key,
-	building_Picture BYTEA,
-	building_Desc VARCHAR (1500),
-	building_Price NUMERIC,
-	building_RentDate DATE,
-	building_Room VARCHAR (1500),
-	building_Name VARCHAR (1500)
+CREATE TABLE Pengelola_logistik (
+	nip varchar(10) primary key NOT NULL,
+	email varchar(50) NOT NULL,
+	password VARCHAR(150) NOT NULL,
+	nomor_tlp varchar (12)
 );
 
-CREATE TABLE userOrder(
-	rental_id SERIAL PRIMARY KEY,
-    username VARCHAR(150),
-    building_Id NUMERIC,
-    building_RentDate DATE,
-    CONSTRAINT userOrder_FK1 FOREIGN KEY (username) REFERENCES userLogin (username),
-    CONSTRAINT userOrder_FK2 FOREIGN KEY (building_Id) REFERENCES rentedBuilding (building_Id),
-    UNIQUE (building_Id, building_RentDate)
+CREATE TABLE Fasilitas (
+	fasilitas_id varchar(15) primary key,
+	gambar_fasilitas BYTEA,
+	desc_fasilitas varchar(200),
+	harga_fasilitas numeric,
+	nama_fasilitas varchar(50),
+	ruangan varchar(20)
 );
 
-ALTER TABLE rentedBuilding ALTER COLUMN building_Id TYPE NUMERIC;
-ALTER TABLE userLogin ADD COLUMN building_Id INTEGER;
-ALTER TABLE userlogin ADD CONSTRAINT userlogin_FK FOREIGN KEY (building_Id) REFERENCES rentedBuilding (building_Id);
-ALTER TABLE userLogin ADD CONSTRAINT userlogin_PK PRIMARY KEY (username);
+CREATE TABLE Orders(
+	order_id varchar(15) PRIMARY KEY,
+    nim VARCHAR(10),
+    fasilitas_id varchar(15) NOT NULL,
+    tanggal_mulai DATE,
+	tanggal_selesai DATE,
+	file_dokumen BYTEA,
+    CONSTRAINT Orders_FK1 FOREIGN KEY (nim) REFERENCES Peminjam (nim),
+    CONSTRAINT Orders_FK2 FOREIGN KEY (fasilitas_id) REFERENCES Fasilitas (fasilitas_id)
+);
+
+CREATE TABLE Kerusakan (
+	kerusakan_id varchar(10) primary key NOT NULL,
+	order_id varchar(15),
+	fasilitas_id varchar(15),
+	dokumen_kerusakan BYTEA,
+	CONSTRAINT Kerusakan_FK1 FOREIGN KEY (order_id) REFERENCES Orders (order_id),
+    CONSTRAINT Kerusakan_FK2 FOREIGN KEY (fasilitas_id) REFERENCES Fasilitas (fasilitas_id)
+);
+
+CREATE TABLE Pembatalan (
+	pembatalan_id varchar(10) primary key NOT NULL,
+	order_id varchar(15),
+	fasilitas_id varchar(15),
+	dokumen_pembatalan BYTEA,
+	CONSTRAINT Kerusakan_FK1 FOREIGN KEY (order_id) REFERENCES Orders (order_id),
+    CONSTRAINT Kerusakan_FK2 FOREIGN KEY (fasilitas_id) REFERENCES Fasilitas (fasilitas_id)
+);
+
+insert into userlogin values ('suryaaulia@student.telkomuniversity.ac.id', '1302210084');
 
 SELECT * FROM rentedBuilding;

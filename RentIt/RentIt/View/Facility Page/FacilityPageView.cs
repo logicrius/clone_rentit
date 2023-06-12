@@ -67,5 +67,10 @@ namespace RentIt.View.Facility_Page
             otherView otherview = new otherView();
             otherview.ShowDialog();
         }
+
+        private void textBox_jUDULgku_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
