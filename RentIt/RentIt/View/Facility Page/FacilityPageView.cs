@@ -67,5 +67,10 @@ namespace RentIt.View.Facility_Page
             otherView otherview = new otherView();
             otherview.ShowDialog();
         }
+
+        private void FacilityPageView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 CREATE TABLE userLogin (
 	username VARCHAR(150) primary key,
-	passowrd VARCHAR(150),
+	password VARCHAR(150),
 	rentedBuilding NUMERIC
 );
 
@@ -30,3 +30,5 @@ ALTER TABLE userlogin ADD CONSTRAINT userlogin_FK FOREIGN KEY (building_Id) REFE
 ALTER TABLE userLogin ADD CONSTRAINT userlogin_PK PRIMARY KEY (username);
 
 SELECT * FROM rentedBuilding;
+
+INSERT INTO userLogin VALUES('juliandrigifari@student.telkomuniversity.ac.id','praktikum');

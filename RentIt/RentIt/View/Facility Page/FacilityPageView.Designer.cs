@@ -52,11 +52,7 @@
             this.buttonStudentCenter = new System.Windows.Forms.Button();
             this.textBox_JudulStudentCenter = new System.Windows.Forms.TextBox();
             this.textBoxStudentCenter = new System.Windows.Forms.TextBox();
-            this.buttonTennisCourt = new System.Windows.Forms.Button();
-            this.textBox_TennisCourt = new System.Windows.Forms.TextBox();
-            this.textBoxTennisCourt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox_TennisCourt = new System.Windows.Forms.PictureBox();
             this.pictureBoxStudentCenter = new System.Windows.Forms.PictureBox();
             this.pictureBox_Auditorium = new System.Windows.Forms.PictureBox();
             this.pictureBox_TUCH = new System.Windows.Forms.PictureBox();
@@ -69,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_TennisCourt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudentCenter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Auditorium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_TUCH)).BeginInit();
@@ -84,7 +79,7 @@
             this.redBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.redBox.Location = new System.Drawing.Point(0, 0);
             this.redBox.Name = "redBox";
-            this.redBox.Size = new System.Drawing.Size(1360, 38);
+            this.redBox.Size = new System.Drawing.Size(1238, 38);
             this.redBox.TabIndex = 17;
             // 
             // label1
@@ -93,7 +88,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.Size = new System.Drawing.Size(303, 40);
             this.label1.TabIndex = 16;
             this.label1.Text = "Available Facility";
             // 
@@ -127,17 +122,19 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(697, 89);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 20);
+            this.textBox1.Size = new System.Drawing.Size(323, 26);
             this.textBox1.TabIndex = 12;
             // 
             // textBox_GKU
             // 
+            this.textBox_GKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.textBox_GKU.Location = new System.Drawing.Point(37, 261);
             this.textBox_GKU.Multiline = true;
             this.textBox_GKU.Name = "textBox_GKU";
-            this.textBox_GKU.Size = new System.Drawing.Size(227, 362);
+            this.textBox_GKU.Size = new System.Drawing.Size(227, 368);
             this.textBox_GKU.TabIndex = 18;
-            this.textBox_GKU.Text = resources.GetString("textBox_GKU.Text");
+            this.textBox_GKU.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nGKU Telkom University memiliki nama lain Gedung Tokong Nana" +
+    "s yang di ambil dari salah satu laut di nata, pulau terluar di Indonesia.";
             this.textBox_GKU.TextChanged += new System.EventHandler(this.textBox_GKU_TextChanged);
             // 
             // textBox_jUDULgku
@@ -145,8 +142,9 @@
             this.textBox_jUDULgku.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_jUDULgku.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_jUDULgku.Location = new System.Drawing.Point(38, 408);
+            this.textBox_jUDULgku.Multiline = true;
             this.textBox_jUDULgku.Name = "textBox_jUDULgku";
-            this.textBox_jUDULgku.Size = new System.Drawing.Size(224, 22);
+            this.textBox_jUDULgku.Size = new System.Drawing.Size(224, 67);
             this.textBox_jUDULgku.TabIndex = 20;
             this.textBox_jUDULgku.Text = "Gedung Kuliah Umum";
             this.textBox_jUDULgku.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -155,11 +153,11 @@
             // 
             this.button_GKU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
             this.button_GKU.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_GKU.Location = new System.Drawing.Point(88, 590);
+            this.button_GKU.Location = new System.Drawing.Point(88, 592);
             this.button_GKU.Name = "button_GKU";
-            this.button_GKU.Size = new System.Drawing.Size(105, 22);
+            this.button_GKU.Size = new System.Drawing.Size(115, 31);
             this.button_GKU.TabIndex = 21;
-            this.button_GKU.Text = "Book Now          >";
+            this.button_GKU.Text = "Book Now >";
             this.button_GKU.UseVisualStyleBackColor = false;
             this.button_GKU.Click += new System.EventHandler(this.button_GKU_Click);
             // 
@@ -172,16 +170,16 @@
             this.bottomPanel.Controls.Add(this.facebook);
             this.bottomPanel.Controls.Add(this.logoBottom);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(0, 689);
+            this.bottomPanel.Location = new System.Drawing.Point(0, 675);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(1360, 81);
+            this.bottomPanel.Size = new System.Drawing.Size(1238, 81);
             this.bottomPanel.TabIndex = 22;
             // 
             // twitter
             // 
             this.twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.twitter.Image = global::RentIt.Properties.Resources.twit;
-            this.twitter.Location = new System.Drawing.Point(1293, 25);
+            this.twitter.Location = new System.Drawing.Point(1171, 25);
             this.twitter.Name = "twitter";
             this.twitter.Size = new System.Drawing.Size(30, 28);
             this.twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +190,7 @@
             // 
             this.linkedin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkedin.Image = global::RentIt.Properties.Resources.Linked;
-            this.linkedin.Location = new System.Drawing.Point(1235, 25);
+            this.linkedin.Location = new System.Drawing.Point(1113, 25);
             this.linkedin.Name = "linkedin";
             this.linkedin.Size = new System.Drawing.Size(30, 28);
             this.linkedin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +201,7 @@
             // 
             this.instagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.instagram.Image = global::RentIt.Properties.Resources.insta;
-            this.instagram.Location = new System.Drawing.Point(1179, 25);
+            this.instagram.Location = new System.Drawing.Point(1057, 25);
             this.instagram.Name = "instagram";
             this.instagram.Size = new System.Drawing.Size(30, 28);
             this.instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +212,7 @@
             // 
             this.facebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.facebook.Image = global::RentIt.Properties.Resources.face;
-            this.facebook.Location = new System.Drawing.Point(1118, 25);
+            this.facebook.Location = new System.Drawing.Point(996, 25);
             this.facebook.Name = "facebook";
             this.facebook.Size = new System.Drawing.Size(30, 28);
             this.facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -234,11 +232,11 @@
             // 
             this.buttonTUCH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
             this.buttonTUCH.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonTUCH.Location = new System.Drawing.Point(365, 590);
+            this.buttonTUCH.Location = new System.Drawing.Point(389, 592);
             this.buttonTUCH.Name = "buttonTUCH";
-            this.buttonTUCH.Size = new System.Drawing.Size(105, 22);
+            this.buttonTUCH.Size = new System.Drawing.Size(115, 31);
             this.buttonTUCH.TabIndex = 26;
-            this.buttonTUCH.Text = "Book Now          >";
+            this.buttonTUCH.Text = "Book Now >";
             this.buttonTUCH.UseVisualStyleBackColor = false;
             this.buttonTUCH.Click += new System.EventHandler(this.buttonTUCH_Click);
             // 
@@ -246,7 +244,7 @@
             // 
             this.textBoxTUCH.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTUCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTUCH.Location = new System.Drawing.Point(315, 408);
+            this.textBoxTUCH.Location = new System.Drawing.Point(335, 408);
             this.textBoxTUCH.Multiline = true;
             this.textBoxTUCH.Name = "textBoxTUCH";
             this.textBoxTUCH.Size = new System.Drawing.Size(224, 41);
@@ -256,22 +254,23 @@
             // 
             // textBox_TUCH
             // 
-            this.textBox_TUCH.Location = new System.Drawing.Point(314, 261);
+            this.textBox_TUCH.Location = new System.Drawing.Point(334, 261);
             this.textBox_TUCH.Multiline = true;
             this.textBox_TUCH.Name = "textBox_TUCH";
-            this.textBox_TUCH.Size = new System.Drawing.Size(227, 362);
+            this.textBox_TUCH.Size = new System.Drawing.Size(227, 368);
             this.textBox_TUCH.TabIndex = 23;
-            this.textBox_TUCH.Text = resources.GetString("textBox_TUCH.Text");
+            this.textBox_TUCH.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nTelkom University Convention Hall atau biasa disebut dengan" +
+    " TUCH dengan kapasitas sebesar 800 orang.";
             // 
             // button_Auditorium
             // 
             this.button_Auditorium.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
             this.button_Auditorium.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_Auditorium.Location = new System.Drawing.Point(644, 590);
+            this.button_Auditorium.Location = new System.Drawing.Point(697, 592);
             this.button_Auditorium.Name = "button_Auditorium";
-            this.button_Auditorium.Size = new System.Drawing.Size(105, 22);
+            this.button_Auditorium.Size = new System.Drawing.Size(115, 31);
             this.button_Auditorium.TabIndex = 30;
-            this.button_Auditorium.Text = "Book Now          >";
+            this.button_Auditorium.Text = "Book Now >";
             this.button_Auditorium.UseVisualStyleBackColor = false;
             this.button_Auditorium.Click += new System.EventHandler(this.button_Auditorium_Click);
             // 
@@ -279,84 +278,55 @@
             // 
             this.textBox_judulAuditorium.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_judulAuditorium.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_judulAuditorium.Location = new System.Drawing.Point(594, 408);
+            this.textBox_judulAuditorium.Location = new System.Drawing.Point(632, 408);
             this.textBox_judulAuditorium.Name = "textBox_judulAuditorium";
-            this.textBox_judulAuditorium.Size = new System.Drawing.Size(224, 22);
+            this.textBox_judulAuditorium.Size = new System.Drawing.Size(224, 33);
             this.textBox_judulAuditorium.TabIndex = 29;
             this.textBox_judulAuditorium.Text = "Auditorium";
             this.textBox_judulAuditorium.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxAuditorium
             // 
-            this.textBoxAuditorium.Location = new System.Drawing.Point(593, 261);
+            this.textBoxAuditorium.Location = new System.Drawing.Point(631, 261);
             this.textBoxAuditorium.Multiline = true;
             this.textBoxAuditorium.Name = "textBoxAuditorium";
-            this.textBoxAuditorium.Size = new System.Drawing.Size(227, 362);
+            this.textBoxAuditorium.Size = new System.Drawing.Size(227, 368);
             this.textBoxAuditorium.TabIndex = 27;
-            this.textBoxAuditorium.Text = resources.GetString("textBoxAuditorium.Text");
+            this.textBoxAuditorium.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAuditorium Damar berdiri di atas lahan seluas 1000 meter pe" +
+    "rsegi, kawasan lahan hijau, dikelilingi hutan lindung dalam universitas.\r\n";
             // 
             // buttonStudentCenter
             // 
             this.buttonStudentCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
             this.buttonStudentCenter.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonStudentCenter.Location = new System.Drawing.Point(915, 590);
+            this.buttonStudentCenter.Location = new System.Drawing.Point(990, 592);
             this.buttonStudentCenter.Name = "buttonStudentCenter";
-            this.buttonStudentCenter.Size = new System.Drawing.Size(105, 22);
+            this.buttonStudentCenter.Size = new System.Drawing.Size(115, 31);
             this.buttonStudentCenter.TabIndex = 34;
-            this.buttonStudentCenter.Text = "Book Now          >";
+            this.buttonStudentCenter.Text = "Book Now >";
             this.buttonStudentCenter.UseVisualStyleBackColor = false;
             // 
             // textBox_JudulStudentCenter
             // 
             this.textBox_JudulStudentCenter.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_JudulStudentCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_JudulStudentCenter.Location = new System.Drawing.Point(865, 408);
+            this.textBox_JudulStudentCenter.Location = new System.Drawing.Point(927, 408);
             this.textBox_JudulStudentCenter.Name = "textBox_JudulStudentCenter";
-            this.textBox_JudulStudentCenter.Size = new System.Drawing.Size(224, 22);
+            this.textBox_JudulStudentCenter.Size = new System.Drawing.Size(224, 33);
             this.textBox_JudulStudentCenter.TabIndex = 33;
             this.textBox_JudulStudentCenter.Text = "Student Center";
             this.textBox_JudulStudentCenter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxStudentCenter
             // 
-            this.textBoxStudentCenter.Location = new System.Drawing.Point(864, 261);
+            this.textBoxStudentCenter.Location = new System.Drawing.Point(926, 261);
             this.textBoxStudentCenter.Multiline = true;
             this.textBoxStudentCenter.Name = "textBoxStudentCenter";
-            this.textBoxStudentCenter.Size = new System.Drawing.Size(227, 362);
+            this.textBoxStudentCenter.Size = new System.Drawing.Size(227, 368);
             this.textBoxStudentCenter.TabIndex = 31;
-            this.textBoxStudentCenter.Text = resources.GetString("textBoxStudentCenter.Text");
+            this.textBoxStudentCenter.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nStudent Center tempat kesekretariatan yang memiiliki fungsi" +
+    " administrasi, konsolidasi, latihan dan penyimpanan barang.\r\n\r\n";
             this.textBoxStudentCenter.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // buttonTennisCourt
-            // 
-            this.buttonTennisCourt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
-            this.buttonTennisCourt.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonTennisCourt.Location = new System.Drawing.Point(1184, 590);
-            this.buttonTennisCourt.Name = "buttonTennisCourt";
-            this.buttonTennisCourt.Size = new System.Drawing.Size(105, 22);
-            this.buttonTennisCourt.TabIndex = 38;
-            this.buttonTennisCourt.Text = "Book Now          >";
-            this.buttonTennisCourt.UseVisualStyleBackColor = false;
-            // 
-            // textBox_TennisCourt
-            // 
-            this.textBox_TennisCourt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_TennisCourt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_TennisCourt.Location = new System.Drawing.Point(1134, 408);
-            this.textBox_TennisCourt.Name = "textBox_TennisCourt";
-            this.textBox_TennisCourt.Size = new System.Drawing.Size(224, 22);
-            this.textBox_TennisCourt.TabIndex = 37;
-            this.textBox_TennisCourt.Text = "Tennis Court";
-            this.textBox_TennisCourt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxTennisCourt
-            // 
-            this.textBoxTennisCourt.Location = new System.Drawing.Point(1133, 261);
-            this.textBoxTennisCourt.Multiline = true;
-            this.textBoxTennisCourt.Name = "textBoxTennisCourt";
-            this.textBoxTennisCourt.Size = new System.Drawing.Size(227, 362);
-            this.textBoxTennisCourt.TabIndex = 35;
-            this.textBoxTennisCourt.Text = resources.GetString("textBoxTennisCourt.Text");
             // 
             // button1
             // 
@@ -372,20 +342,10 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox_TennisCourt
-            // 
-            this.pictureBox_TennisCourt.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_TennisCourt.Image")));
-            this.pictureBox_TennisCourt.Location = new System.Drawing.Point(1134, 261);
-            this.pictureBox_TennisCourt.Name = "pictureBox_TennisCourt";
-            this.pictureBox_TennisCourt.Size = new System.Drawing.Size(225, 129);
-            this.pictureBox_TennisCourt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_TennisCourt.TabIndex = 36;
-            this.pictureBox_TennisCourt.TabStop = false;
-            // 
             // pictureBoxStudentCenter
             // 
             this.pictureBoxStudentCenter.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxStudentCenter.Image")));
-            this.pictureBoxStudentCenter.Location = new System.Drawing.Point(865, 261);
+            this.pictureBoxStudentCenter.Location = new System.Drawing.Point(927, 261);
             this.pictureBoxStudentCenter.Name = "pictureBoxStudentCenter";
             this.pictureBoxStudentCenter.Size = new System.Drawing.Size(225, 129);
             this.pictureBoxStudentCenter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -395,7 +355,7 @@
             // pictureBox_Auditorium
             // 
             this.pictureBox_Auditorium.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Auditorium.Image")));
-            this.pictureBox_Auditorium.Location = new System.Drawing.Point(594, 261);
+            this.pictureBox_Auditorium.Location = new System.Drawing.Point(632, 261);
             this.pictureBox_Auditorium.Name = "pictureBox_Auditorium";
             this.pictureBox_Auditorium.Size = new System.Drawing.Size(225, 129);
             this.pictureBox_Auditorium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -405,7 +365,7 @@
             // pictureBox_TUCH
             // 
             this.pictureBox_TUCH.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_TUCH.Image")));
-            this.pictureBox_TUCH.Location = new System.Drawing.Point(315, 261);
+            this.pictureBox_TUCH.Location = new System.Drawing.Point(335, 261);
             this.pictureBox_TUCH.Name = "pictureBox_TUCH";
             this.pictureBox_TUCH.Size = new System.Drawing.Size(225, 129);
             this.pictureBox_TUCH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -445,15 +405,11 @@
             // 
             // FacilityPageView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1200, 787);
+            this.ClientSize = new System.Drawing.Size(1238, 756);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonTennisCourt);
-            this.Controls.Add(this.textBox_TennisCourt);
-            this.Controls.Add(this.pictureBox_TennisCourt);
-            this.Controls.Add(this.textBoxTennisCourt);
             this.Controls.Add(this.buttonStudentCenter);
             this.Controls.Add(this.textBox_JudulStudentCenter);
             this.Controls.Add(this.pictureBoxStudentCenter);
@@ -481,13 +437,13 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FacilityPageView";
             this.Text = "Facility Page";
+            this.Load += new System.EventHandler(this.FacilityPageView_Load);
             this.bottomPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBottom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_TennisCourt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudentCenter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Auditorium)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_TUCH)).EndInit();
@@ -530,10 +486,6 @@
         private System.Windows.Forms.TextBox textBox_JudulStudentCenter;
         private System.Windows.Forms.PictureBox pictureBoxStudentCenter;
         private System.Windows.Forms.TextBox textBoxStudentCenter;
-        private System.Windows.Forms.Button buttonTennisCourt;
-        private System.Windows.Forms.TextBox textBox_TennisCourt;
-        private System.Windows.Forms.PictureBox pictureBox_TennisCourt;
-        private System.Windows.Forms.TextBox textBoxTennisCourt;
         private System.Windows.Forms.Button button1;
     }
 }
