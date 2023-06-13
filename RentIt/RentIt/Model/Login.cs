@@ -8,37 +8,66 @@ namespace RentIt.Model
     internal class Login
     {
         // Syntax untuk di PostgreSQL yang hitung username dan password yang sesuai dengan input.
-        private static string query = "SELECT COUNT(*) FROM Peminjam WHERE email = @email AND password = @password";
+        private static string queryPeminjam = "SELECT COUNT(*) FROM Peminjam WHERE email = @email AND password = @password";
+        private static string queryAdmin = "SELECT COUNT(*) FROM TableAdmin WHERE email = @email AND password = @password";
         public bool isLogged = true;
         public void PerformLogin(string email, string password)
         {
             // Menghubungkan program dengan database.
             using (NpgsqlConnection connection = dbConnection.GetConnection())
             {
-                // Melaksanakan sytax pada 'query' di database yang terhubung 'connection'.
-                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                if (email.Contains("student"))
                 {
-                    // Mencocokkan data username dan
-                    command.Parameters.AddWithValue("@email", email);
-                    // password pada database dengan input user.
-                    command.Parameters.AddWithValue("@password", password);
-
-                    int count = Convert.ToInt32(command.ExecuteScalar());
-
-                    if (count > 0)
+                    using (NpgsqlCommand command = new NpgsqlCommand(queryPeminjam, connection))
                     {
-                        MenuView menuView = new MenuView();
-                        menuView.Show();
-                        // Hide form LoginView.
-                        Form loginForm = Application.OpenForms["LoginView"];
-                        if (loginForm != null)
+                        // Mencocokkan data username dan
+                        command.Parameters.AddWithValue("@email", email);
+                        // password pada database dengan input user.
+                        command.Parameters.AddWithValue("@password", password);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+                        if (count > 0)
                         {
-                            loginForm.Hide();
+                            MenuView menuView = new MenuView();
+                            menuView.Show();
+                            // Hide form LoginView.
+                            Form loginForm = Application.OpenForms["LoginView"];
+                            if (loginForm != null)
+                            {
+                                loginForm.Hide();
+                            }
+                        }
+                        else
+                        {
+                            isLogged = false;
                         }
                     }
-                    else
+                }
+                else
+                {
+                    using (NpgsqlCommand command = new NpgsqlCommand(queryAdmin, connection))
                     {
-                        isLogged = false;
+                        // Mencocokkan data username dan
+                        command.Parameters.AddWithValue("@email", email);
+                        // password pada database dengan input user.
+                        command.Parameters.AddWithValue("@password", password);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+                        if (count > 0)
+                        {
+                            Admin_HomePageView menuView = new Admin_HomePageView();
+                            menuView.Show();
+                            // Hide form LoginView.
+                            Form loginForm = Application.OpenForms["LoginView"];
+                            if (loginForm != null)
+                            {
+                                loginForm.Hide();
+                            }
+                        }
+                        else
+                        {
+                            isLogged = false;
+                        }
                     }
                 }
             }
