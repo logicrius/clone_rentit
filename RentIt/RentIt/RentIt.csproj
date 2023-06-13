@@ -266,6 +266,7 @@
     <Compile Include="Model\dbConnection.cs" />
     <Compile Include="Model\LaporKerusakan.cs" />
     <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\RentPage.cs" />
     <Compile Include="View\Admin_HomePage\Admin_HomePage.cs">
       <SubType>Form</SubType>
     </Compile>

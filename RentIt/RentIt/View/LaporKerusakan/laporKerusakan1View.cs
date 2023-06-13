@@ -19,6 +19,7 @@ namespace RentIt.View.LaporKerusakan
         public laporKerusakan1View()
         {
             InitializeComponent();
+            dragfile.DoubleClick += dragfile_DoubleClick;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace RentIt.View.LaporKerusakan
                 e.Effect = DragDropEffects.Copy;
                 pictureBox2.Visible = false;
                 Instruksi.Visible = false;
-                
+                button4.Visible = false;
             }
 
 
@@ -120,6 +121,44 @@ namespace RentIt.View.LaporKerusakan
         private void GKU_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "All Files (*.*)|*.*";
+                openFileDialog.Multiselect = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string[] files = openFileDialog.FileNames;
+                    foreach (string file in files)
+                    {
+                        if (!dragfile.Items.Contains(Path.GetFileName(file)))
+                        {
+                            dragfile.Items.Add(Path.GetFileName(file));
+                        }
+                    }
+                }
+            }
+
+            button4.Visible = false;
+            pictureBox2.Visible = false;
+            Instruksi.Visible = false;
+        }
+
+        private void dragfile_DoubleClick(object sender, EventArgs e)
+        {
+            if (dragfile.SelectedItem != null)
+            {
+                string selectedFile = dragfile.SelectedItem.ToString();
+                DialogResult result = MessageBox.Show("Hapus File?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    dragfile.Items.Remove(selectedFile);
+                }
+            }
         }
     }
 }

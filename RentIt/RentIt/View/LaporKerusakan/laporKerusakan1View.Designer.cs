@@ -56,6 +56,7 @@
             this.GKU = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.Bawah.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Twit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Linked)).BeginInit();
@@ -77,9 +78,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.button3.Location = new System.Drawing.Point(462, 45);
+            this.button3.Location = new System.Drawing.Point(616, 55);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 43);
+            this.button3.Size = new System.Drawing.Size(157, 53);
             this.button3.TabIndex = 36;
             this.button3.Text = "Others";
             this.button3.UseVisualStyleBackColor = false;
@@ -93,19 +95,19 @@
             this.Bawah.Controls.Add(this.Insta);
             this.Bawah.Controls.Add(this.Face);
             this.Bawah.Controls.Add(this.pictureBox1);
-            this.Bawah.Location = new System.Drawing.Point(0, 777);
-            this.Bawah.Margin = new System.Windows.Forms.Padding(2);
+            this.Bawah.Location = new System.Drawing.Point(0, 956);
+            this.Bawah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bawah.Name = "Bawah";
-            this.Bawah.Size = new System.Drawing.Size(999, 81);
+            this.Bawah.Size = new System.Drawing.Size(1332, 100);
             this.Bawah.TabIndex = 35;
             // 
             // Twit
             // 
             this.Twit.Image = global::RentIt.Properties.Resources.twit;
-            this.Twit.Location = new System.Drawing.Point(916, 26);
-            this.Twit.Margin = new System.Windows.Forms.Padding(2);
+            this.Twit.Location = new System.Drawing.Point(1221, 32);
+            this.Twit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Twit.Name = "Twit";
-            this.Twit.Size = new System.Drawing.Size(30, 28);
+            this.Twit.Size = new System.Drawing.Size(40, 34);
             this.Twit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Twit.TabIndex = 4;
             this.Twit.TabStop = false;
@@ -113,10 +115,10 @@
             // Linked
             // 
             this.Linked.Image = global::RentIt.Properties.Resources.Linked;
-            this.Linked.Location = new System.Drawing.Point(871, 26);
-            this.Linked.Margin = new System.Windows.Forms.Padding(2);
+            this.Linked.Location = new System.Drawing.Point(1161, 32);
+            this.Linked.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Linked.Name = "Linked";
-            this.Linked.Size = new System.Drawing.Size(30, 28);
+            this.Linked.Size = new System.Drawing.Size(40, 34);
             this.Linked.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Linked.TabIndex = 3;
             this.Linked.TabStop = false;
@@ -124,10 +126,10 @@
             // Insta
             // 
             this.Insta.Image = global::RentIt.Properties.Resources.insta;
-            this.Insta.Location = new System.Drawing.Point(823, 26);
-            this.Insta.Margin = new System.Windows.Forms.Padding(2);
+            this.Insta.Location = new System.Drawing.Point(1097, 32);
+            this.Insta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Insta.Name = "Insta";
-            this.Insta.Size = new System.Drawing.Size(30, 28);
+            this.Insta.Size = new System.Drawing.Size(40, 34);
             this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Insta.TabIndex = 2;
             this.Insta.TabStop = false;
@@ -135,10 +137,10 @@
             // Face
             // 
             this.Face.Image = global::RentIt.Properties.Resources.face;
-            this.Face.Location = new System.Drawing.Point(779, 26);
-            this.Face.Margin = new System.Windows.Forms.Padding(2);
+            this.Face.Location = new System.Drawing.Point(1039, 32);
+            this.Face.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Face.Name = "Face";
-            this.Face.Size = new System.Drawing.Size(30, 28);
+            this.Face.Size = new System.Drawing.Size(40, 34);
             this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Face.TabIndex = 1;
             this.Face.TabStop = false;
@@ -146,8 +148,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RentIt.Properties.Resources.babi;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(189, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -158,10 +160,11 @@
             // 
             this.dragfile.AllowDrop = true;
             this.dragfile.FormattingEnabled = true;
-            this.dragfile.Location = new System.Drawing.Point(36, 18);
-            this.dragfile.Margin = new System.Windows.Forms.Padding(2);
+            this.dragfile.ItemHeight = 16;
+            this.dragfile.Location = new System.Drawing.Point(48, 22);
+            this.dragfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dragfile.Name = "dragfile";
-            this.dragfile.Size = new System.Drawing.Size(468, 147);
+            this.dragfile.Size = new System.Drawing.Size(623, 180);
             this.dragfile.TabIndex = 0;
             this.dragfile.SelectedIndexChanged += new System.EventHandler(this.dragfile_SelectedIndexChanged);
             this.dragfile.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragfile_DragDrop);
@@ -171,10 +174,9 @@
             // 
             this.docacc.AutoSize = true;
             this.docacc.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docacc.Location = new System.Drawing.Point(112, 312);
-            this.docacc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.docacc.Location = new System.Drawing.Point(149, 384);
             this.docacc.Name = "docacc";
-            this.docacc.Size = new System.Drawing.Size(315, 15);
+            this.docacc.Size = new System.Drawing.Size(358, 19);
             this.docacc.TabIndex = 4;
             this.docacc.Text = "Document files .doc .docx .epub .gdoc .odt .oth .ott .pdf .rtf";
             // 
@@ -182,10 +184,9 @@
             // 
             this.accfile.AutoSize = true;
             this.accfile.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accfile.Location = new System.Drawing.Point(112, 286);
-            this.accfile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.accfile.Location = new System.Drawing.Point(149, 352);
             this.accfile.Name = "accfile";
-            this.accfile.Size = new System.Drawing.Size(106, 15);
+            this.accfile.Size = new System.Drawing.Size(124, 19);
             this.accfile.TabIndex = 3;
             this.accfile.Text = "Accepted file types:";
             // 
@@ -194,10 +195,10 @@
             this.Batal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.Batal.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Batal.ForeColor = System.Drawing.Color.White;
-            this.Batal.Location = new System.Drawing.Point(106, 338);
-            this.Batal.Margin = new System.Windows.Forms.Padding(2);
+            this.Batal.Location = new System.Drawing.Point(141, 416);
+            this.Batal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Batal.Name = "Batal";
-            this.Batal.Size = new System.Drawing.Size(148, 28);
+            this.Batal.Size = new System.Drawing.Size(197, 34);
             this.Batal.TabIndex = 2;
             this.Batal.Text = "Ajukan Pembatalan";
             this.Batal.UseVisualStyleBackColor = false;
@@ -205,23 +206,23 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.Instruksi);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.dragfile);
-            this.panel4.Location = new System.Drawing.Point(106, 90);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(141, 111);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(544, 186);
+            this.panel4.Size = new System.Drawing.Size(725, 229);
             this.panel4.TabIndex = 1;
             // 
             // Instruksi
             // 
             this.Instruksi.AutoSize = true;
             this.Instruksi.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Instruksi.Location = new System.Drawing.Point(153, 104);
-            this.Instruksi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Instruksi.Location = new System.Drawing.Point(204, 128);
             this.Instruksi.Name = "Instruksi";
-            this.Instruksi.Size = new System.Drawing.Size(262, 17);
+            this.Instruksi.Size = new System.Drawing.Size(325, 22);
             this.Instruksi.TabIndex = 2;
             this.Instruksi.Text = "You can drag and drop files here to add them.";
             this.Instruksi.Click += new System.EventHandler(this.Instruksi_Click);
@@ -229,10 +230,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RentIt.Properties.Resources.dunlut;
-            this.pictureBox2.Location = new System.Drawing.Point(258, 61);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(344, 75);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(39, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -246,20 +247,19 @@
             this.panel3.Controls.Add(this.Batal);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.UPdok);
-            this.panel3.Location = new System.Drawing.Point(122, 369);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(163, 454);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(771, 379);
+            this.panel3.Size = new System.Drawing.Size(1028, 466);
             this.panel3.TabIndex = 34;
             // 
             // UPdok
             // 
             this.UPdok.AutoSize = true;
             this.UPdok.Font = new System.Drawing.Font("Open Sans", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPdok.Location = new System.Drawing.Point(248, 15);
-            this.UPdok.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UPdok.Location = new System.Drawing.Point(331, 18);
             this.UPdok.Name = "UPdok";
-            this.UPdok.Size = new System.Drawing.Size(292, 27);
+            this.UPdok.Size = new System.Drawing.Size(357, 33);
             this.UPdok.TabIndex = 0;
             this.UPdok.Text = " Upload Dokumen Pendukung";
             // 
@@ -267,10 +267,9 @@
             // 
             this.batalkan.AutoSize = true;
             this.batalkan.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.batalkan.Location = new System.Drawing.Point(242, 203);
-            this.batalkan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.batalkan.Location = new System.Drawing.Point(323, 250);
             this.batalkan.Name = "batalkan";
-            this.batalkan.Size = new System.Drawing.Size(221, 20);
+            this.batalkan.Size = new System.Drawing.Size(269, 24);
             this.batalkan.TabIndex = 33;
             this.batalkan.Text = "Pesanan yang ingin dilaporkan";
             // 
@@ -279,10 +278,9 @@
             this.Uwang.AutoSize = true;
             this.Uwang.Font = new System.Drawing.Font("Open Sans SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uwang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(21)))), ((int)(((byte)(33)))));
-            this.Uwang.Location = new System.Drawing.Point(26, 46);
-            this.Uwang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Uwang.Location = new System.Drawing.Point(35, 57);
             this.Uwang.Name = "Uwang";
-            this.Uwang.Size = new System.Drawing.Size(78, 15);
+            this.Uwang.Size = new System.Drawing.Size(92, 19);
             this.Uwang.TabIndex = 1;
             this.Uwang.Text = "Rp 500.000.00";
             this.Uwang.Click += new System.EventHandler(this.Uwang_Click);
@@ -291,10 +289,9 @@
             // 
             this.GDku.AutoSize = true;
             this.GDku.Font = new System.Drawing.Font("Open Sans SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GDku.Location = new System.Drawing.Point(26, 13);
-            this.GDku.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GDku.Location = new System.Drawing.Point(35, 16);
             this.GDku.Name = "GDku";
-            this.GDku.Size = new System.Drawing.Size(158, 20);
+            this.GDku.Size = new System.Drawing.Size(191, 24);
             this.GDku.TabIndex = 0;
             this.GDku.Text = "Gedung Kuliah Umum";
             this.GDku.Click += new System.EventHandler(this.GDku_Click);
@@ -303,9 +300,10 @@
             // 
             this.Pembatalan.AutoSize = true;
             this.Pembatalan.Font = new System.Drawing.Font("Open Sans", 22F, System.Drawing.FontStyle.Bold);
-            this.Pembatalan.Location = new System.Drawing.Point(338, 120);
+            this.Pembatalan.Location = new System.Drawing.Point(451, 148);
+            this.Pembatalan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Pembatalan.Name = "Pembatalan";
-            this.Pembatalan.Size = new System.Drawing.Size(311, 44);
+            this.Pembatalan.Size = new System.Drawing.Size(381, 54);
             this.Pembatalan.TabIndex = 29;
             this.Pembatalan.Text = "LAPOR KERUSAKAN";
             // 
@@ -315,9 +313,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.button1.Location = new System.Drawing.Point(338, 45);
+            this.button1.Location = new System.Drawing.Point(451, 55);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 43);
+            this.button1.Size = new System.Drawing.Size(157, 53);
             this.button1.TabIndex = 28;
             this.button1.Text = "Facility";
             this.button1.UseVisualStyleBackColor = false;
@@ -327,9 +326,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 13F);
-            this.button2.Location = new System.Drawing.Point(228, 45);
+            this.button2.Location = new System.Drawing.Point(304, 55);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 43);
+            this.button2.Size = new System.Drawing.Size(148, 53);
             this.button2.TabIndex = 27;
             this.button2.Text = "Home";
             this.button2.UseVisualStyleBackColor = true;
@@ -337,9 +337,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(618, 59);
+            this.textBox2.Location = new System.Drawing.Point(824, 73);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 20);
+            this.textBox2.Size = new System.Drawing.Size(331, 22);
             this.textBox2.TabIndex = 25;
             // 
             // panel2
@@ -347,10 +348,10 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.Uwang);
             this.panel2.Controls.Add(this.GDku);
-            this.panel2.Location = new System.Drawing.Point(316, 230);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(421, 283);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(444, 84);
+            this.panel2.Size = new System.Drawing.Size(592, 103);
             this.panel2.TabIndex = 32;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -359,17 +360,18 @@
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(999, 33);
+            this.panel1.Size = new System.Drawing.Size(1332, 41);
             this.panel1.TabIndex = 30;
             // 
             // GKU
             // 
             this.GKU.Image = global::RentIt.Properties.Resources.pic;
-            this.GKU.Location = new System.Drawing.Point(244, 230);
-            this.GKU.Margin = new System.Windows.Forms.Padding(2);
+            this.GKU.Location = new System.Drawing.Point(325, 283);
+            this.GKU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GKU.Name = "GKU";
-            this.GKU.Size = new System.Drawing.Size(82, 84);
+            this.GKU.Size = new System.Drawing.Size(109, 103);
             this.GKU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GKU.TabIndex = 31;
             this.GKU.TabStop = false;
@@ -378,9 +380,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::RentIt.Properties.Resources.PP;
-            this.pictureBox7.Location = new System.Drawing.Point(916, 45);
+            this.pictureBox7.Location = new System.Drawing.Point(1221, 55);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox7.Size = new System.Drawing.Size(67, 59);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
@@ -388,18 +391,29 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::RentIt.Properties.Resources.babi;
-            this.pictureBox5.Location = new System.Drawing.Point(34, 45);
+            this.pictureBox5.Location = new System.Drawing.Point(45, 55);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(191, 34);
+            this.pictureBox5.Size = new System.Drawing.Size(255, 42);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 26;
             this.pictureBox5.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(57, 32);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 38);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Upload File";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // laporKerusakan1View
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 857);
+            this.ClientSize = new System.Drawing.Size(1332, 1055);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.GKU);
             this.Controls.Add(this.pictureBox7);
@@ -413,6 +427,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "laporKerusakan1View";
             this.Text = "laporKerusakanView";
             this.Load += new System.EventHandler(this.laporKerusakan1View_Load);
@@ -468,5 +483,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
     }
 }
