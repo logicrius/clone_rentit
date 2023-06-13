@@ -116,8 +116,6 @@ C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.csproj
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.exe
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.pdb
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Other.otherView.resources
-C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.LaporKerusakan.laporKerusakan1View.resources
-C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.LaporKerusakan.laporKerusakan2View.resources
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Pembatalan.pembatalan2View.resources
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Pembayaran_1.pembayaran1View.resources
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -272,9 +270,6 @@ C:\Users\SSS\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.csproj.C
 C:\Users\SSS\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.csproj.CopyComplete
 C:\Users\SSS\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.exe
 C:\Users\SSS\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.pdb
-C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_HomePage.Admin_HomePage.resources
-C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_LaporanKerusakan.Proposal.resources
-C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_Proposal.Admin_Proposal.resources
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Microsoft.AspNetCore.Authentication.Core.dll
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Microsoft.AspNetCore.Authorization.dll
@@ -357,3 +352,8 @@ C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Swashbuckle.A
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.pdb
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.xml
 C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_LaporanKerusakan.Admin_LaporanKerusakanView.resources
+C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.LaporKerusakanModel.laporKerusakan1View.resources
+C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.LaporKerusakanModel.laporKerusakan2View.resources
+C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_HomePage.Admin_HomePageView.resources
+C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_LaporanKerusakan.ProposalView.resources
+C:\Users\surya\Documents\TubesKPL---RentIt\RentIt\RentIt\obj\Debug\RentIt.View.Admin_Proposal.Admin_ProposalView.resources

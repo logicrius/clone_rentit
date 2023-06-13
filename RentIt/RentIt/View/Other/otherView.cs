@@ -1,4 +1,4 @@
-﻿using RentIt.View.LaporKerusakan;
+﻿using RentIt.View.LaporKerusakanModel;
 using RentIt.View.Menu;
 using RentIt.View.Pembatalan_1;
 using System;

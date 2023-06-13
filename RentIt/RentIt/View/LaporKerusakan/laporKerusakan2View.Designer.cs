@@ -1,4 +1,4 @@
-﻿namespace RentIt.View.LaporKerusakan
+﻿namespace RentIt.View.LaporKerusakanModel
 {
     partial class laporKerusakan2View
     {

@@ -196,6 +196,7 @@
       <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -263,14 +264,17 @@
     <Compile Include="CariGedungController\Olahraga.Designer.cs">
       <DependentUpon>Olahraga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\CariGedung.cs" />
     <Compile Include="Model\dbConnection.cs" />
+    <Compile Include="Model\FasilitasModel.cs" />
     <Compile Include="Model\LaporKerusakan.cs" />
     <Compile Include="Model\Login.cs" />
-    <Compile Include="View\Admin_HomePage\Admin_HomePage.cs">
+    <Compile Include="Model\PembatalanModel.cs" />
+    <Compile Include="View\Admin_HomePage\Admin_HomePageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Admin_HomePage\Admin_HomePage.Designer.cs">
-      <DependentUpon>Admin_HomePage.cs</DependentUpon>
+    <Compile Include="View\Admin_HomePage\Admin_HomePageView.Designer.cs">
+      <DependentUpon>Admin_HomePageView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakanView.cs">
       <SubType>Form</SubType>
@@ -278,17 +282,17 @@
     <Compile Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakanView.Designer.cs">
       <DependentUpon>Admin_LaporanKerusakanView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Admin_LaporanKerusakan\Proposal.cs">
+    <Compile Include="View\Admin_LaporanKerusakan\ProposalView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Admin_LaporanKerusakan\Proposal.Designer.cs">
-      <DependentUpon>Proposal.cs</DependentUpon>
+    <Compile Include="View\Admin_LaporanKerusakan\ProposalView.Designer.cs">
+      <DependentUpon>ProposalView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Admin_Proposal\Admin_Proposal.cs">
+    <Compile Include="View\Admin_Proposal\Admin_ProposalView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Admin_Proposal\Admin_Proposal.Designer.cs">
-      <DependentUpon>Admin_Proposal.cs</DependentUpon>
+    <Compile Include="View\Admin_Proposal\Admin_ProposalView.Designer.cs">
+      <DependentUpon>Admin_ProposalView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Facility Page\FacilityPageView.cs">
       <SubType>Form</SubType>
@@ -385,17 +389,17 @@
     <EmbeddedResource Include="CariGedungController\Olahraga.resx">
       <DependentUpon>Olahraga.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Admin_HomePage\Admin_HomePage.resx">
-      <DependentUpon>Admin_HomePage.cs</DependentUpon>
+    <EmbeddedResource Include="View\Admin_HomePage\Admin_HomePageView.resx">
+      <DependentUpon>Admin_HomePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin_LaporanKerusakan\Admin_LaporanKerusakanView.resx">
       <DependentUpon>Admin_LaporanKerusakanView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Admin_LaporanKerusakan\Proposal.resx">
-      <DependentUpon>Proposal.cs</DependentUpon>
+    <EmbeddedResource Include="View\Admin_LaporanKerusakan\ProposalView.resx">
+      <DependentUpon>ProposalView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Admin_Proposal\Admin_Proposal.resx">
-      <DependentUpon>Admin_Proposal.cs</DependentUpon>
+    <EmbeddedResource Include="View\Admin_Proposal\Admin_ProposalView.resx">
+      <DependentUpon>Admin_ProposalView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Facility Page\FacilityPageView.resx">
       <DependentUpon>FacilityPageView.cs</DependentUpon>

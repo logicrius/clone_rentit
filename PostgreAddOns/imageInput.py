@@ -1,7 +1,7 @@
 import psycopg2
-from psycopg2 import sql
+from psycopg2.extras import DateRange
 
-# Connect ke PostgreSQL database
+# Connect to PostgreSQL database
 connectToDB = psycopg2.connect(
     host="localhost",
     database="LocalRentIt",
@@ -9,20 +9,25 @@ connectToDB = psycopg2.connect(
     password="adminpbo"
 )
 
-# Baca input image
+# Read input image
 with open('SC.jpg', 'rb') as file:
     image_data = file.read()
 
-building_id = 12345  # Isinya 000N, contoh = 0001, 0002, dll
-bulidng_desc = '' # Isinya deskripsi fasilitas
-building_price = 0.0 # Isinya harga sewa
-building_rentDate = '2023-05-03' # Isinya tanggal bisa disewa (tidak pake jam) formatnya 'YYYY-MM-DD'
-building_room = '' # Isinya nama ruangannya (sesuai ama building_name) contoh building_name = TULT, jadi building_room = TULT 07-18
-building_name =  '' # Isinya nama bangunan, contoh = TULT, Gedung Kuliah Umum, dll
+fasilitas_id = 'SC0004'
+desc_fasilitas = 'Student Center tempat kesekretariatan yang memiiliki fungsi administrasi, konsolidasi, latihan dan penyimpanan barang.'
+harga_fasilitas = 5000000.0
+nama_fasilitas = 'Student Center'
+available_date = [date for date in ['2023-06-04', '2023-06-05', '2023-06-06']]
+ruangan = 'Room 109'
 
 cursor = connectToDB.cursor()
-insert_query = sql.SQL("INSERT INTO rentedBuilding (building_Id, building_Picture, building_Desc, building_Price, building_RentDate, building_Room, building_Name) VALUES (%s, %s, %s, %s, %s, %s, %s);")
-cursor.execute(insert_query, [building_id, psycopg2.Binary(image_data), bulidng_desc, building_price, building_rentDate, building_room, building_name])
+
+insert_query = """
+    INSERT INTO Fasilitas (fasilitas_id, gambar_fasilitas, desc_fasilitas, harga_fasilitas, nama_fasilitas, available_date, ruangan)
+    VALUES (%s, %s, %s, %s, %s, ARRAY(SELECT array_agg(d)::date[] FROM unnest(%s) AS d), %s);
+"""
+
+cursor.execute(insert_query, (fasilitas_id, psycopg2.Binary(image_data), desc_fasilitas, harga_fasilitas, nama_fasilitas, available_date, ruangan))
 connectToDB.commit()
 
 cursor.close()

@@ -268,6 +268,7 @@ namespace RentIt.View.Pembatalan_1
             this.Batal.TabIndex = 2;
             this.Batal.Text = "Ajukan Pembatalan";
             this.Batal.UseVisualStyleBackColor = false;
+            this.Batal.Click += new System.EventHandler(this.Batal_Click);
             // 
             // panel4
             // 
@@ -470,6 +471,7 @@ namespace RentIt.View.Pembatalan_1
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Pembatalan1View";
             this.Text = "Pembatalan1View";
+            this.Load += new System.EventHandler(this.Pembatalan1View_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

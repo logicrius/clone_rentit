@@ -13,6 +13,8 @@ using RentIt.View.Admin_HomePage;
 using RentIt.View.Admin_Proposal;
 using RentIt.View.Admin_LaporanKerusakan;
 using RentIt.View.Other;
+using RentIt.View.LaporKerusakanModel;
+using RentIt.View.Pembayaran_1;
 
 namespace RentIt
 {
@@ -26,7 +28,7 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new MenuView());
+            Application.Run(new LoginView());
         }
     }
 }

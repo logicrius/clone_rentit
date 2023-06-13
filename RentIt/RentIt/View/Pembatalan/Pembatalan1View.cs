@@ -1,5 +1,7 @@
-﻿using RentIt.View.Menu;
+﻿using RentIt.Model;
+using RentIt.View.Menu;
 using RentIt.View.Other;
+using RentIt.View.Pembatalan;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,8 +19,12 @@ namespace RentIt.View.Pembatalan_1
 {
     public partial class Pembatalan1View : Form
     {
+        PembatalanModel rusak = new PembatalanModel();
         public Pembatalan1View()
         {
+            rusak.GetDataFromDatabase();
+            Uwang.Text = rusak.facilityPrice.ToString();
+            GDku.Text = rusak.facilityName;
             InitializeComponent();
         }
 
@@ -161,6 +168,23 @@ namespace RentIt.View.Pembatalan_1
         private void Instruksi_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Pembatalan1View_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Batal_Click(object sender, EventArgs e)
+        {
+            string filePath = dragfile.Items[0].ToString();
+            byte[] fileBytes = File.ReadAllBytes(filePath);
+
+            rusak.InputKerusakan(fileBytes);
+
+            this.Hide();
+            pembatalan2View laporKerusakan2View = new pembatalan2View();
+            laporKerusakan2View.ShowDialog();
         }
     }
 }

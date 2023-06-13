@@ -108,7 +108,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox1.Location = new System.Drawing.Point(732, 84);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(218, 14);
             this.textBox1.TabIndex = 0;
@@ -129,7 +129,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.SystemColors.Window;
             this.panel1.Location = new System.Drawing.Point(217, 380);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(328, 185);
             this.panel1.TabIndex = 13;
@@ -237,7 +237,7 @@
             this.roundedPanel2.Controls.Add(this.panel3);
             this.roundedPanel2.Controls.Add(this.label9);
             this.roundedPanel2.Location = new System.Drawing.Point(218, 595);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(837, 461);
             this.roundedPanel2.TabIndex = 16;
@@ -249,7 +249,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(63, 366);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 63);
             this.button1.TabIndex = 5;
@@ -299,7 +299,7 @@
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.dragfile);
             this.panel3.Location = new System.Drawing.Point(63, 95);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(717, 203);
             this.panel3.TabIndex = 1;
@@ -321,7 +321,7 @@
             // 
             this.pictureBox4.Image = global::RentIt.Properties.Resources.dunlut;
             this.pictureBox4.Location = new System.Drawing.Point(332, 48);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(59, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -336,7 +336,7 @@
             this.dragfile.ForeColor = System.Drawing.SystemColors.WindowText;
             this.dragfile.FormattingEnabled = true;
             this.dragfile.Location = new System.Drawing.Point(15, 15);
-            this.dragfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dragfile.Margin = new System.Windows.Forms.Padding(2);
             this.dragfile.Name = "dragfile";
             this.dragfile.Size = new System.Drawing.Size(672, 173);
             this.dragfile.TabIndex = 0;
@@ -370,7 +370,7 @@
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.roundedPanel1.Location = new System.Drawing.Point(653, 177);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(402, 386);
             this.roundedPanel1.TabIndex = 11;
@@ -391,7 +391,7 @@
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(32, 329);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(334, 23);
             this.textBox5.TabIndex = 7;
@@ -400,7 +400,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(31, 251);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(334, 23);
             this.textBox4.TabIndex = 6;
@@ -409,7 +409,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(31, 175);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(334, 23);
             this.textBox3.TabIndex = 5;
@@ -418,7 +418,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(31, 97);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(334, 23);
             this.textBox2.TabIndex = 4;
@@ -476,7 +476,7 @@
             // 
             this.pictureBox9.Image = global::RentIt.Properties.Resources.GEDUNG_KULIAH_UMUM;
             this.pictureBox9.Location = new System.Drawing.Point(217, 180);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(328, 204);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -487,7 +487,7 @@
             // 
             this.pictureBox3.Image = global::RentIt.Properties.Resources.PP;
             this.pictureBox3.Location = new System.Drawing.Point(1017, 72);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(38, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -498,7 +498,7 @@
             // 
             this.pictureBox1.Image = global::RentIt.Properties.Resources.babi;
             this.pictureBox1.Location = new System.Drawing.Point(189, 55);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -523,7 +523,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RentPageView";
             this.Text = "rentPageView";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

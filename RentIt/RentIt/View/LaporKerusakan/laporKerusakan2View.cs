@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RentIt.View.LaporKerusakan
+namespace RentIt.View.LaporKerusakanModel
 {
     public partial class laporKerusakan2View : Form
     {

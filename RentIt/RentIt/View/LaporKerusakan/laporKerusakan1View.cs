@@ -1,4 +1,5 @@
-﻿using RentIt.View.Menu;
+﻿using RentIt.Model;
+using RentIt.View.Menu;
 using RentIt.View.Other;
 using System;
 using System.Collections.Generic;
@@ -12,13 +13,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath;
 
-namespace RentIt.View.LaporKerusakan
+namespace RentIt.View.LaporKerusakanModel
 {
     public partial class laporKerusakan1View : Form
     {
+        LaporKerusakan rusak = new LaporKerusakan();
         public laporKerusakan1View()
         {
             InitializeComponent();
+            rusak.GetDataFromDatabase();
+            Uwang.Text = rusak.facilityPrice.ToString();
+            GDku.Text = rusak.facilityName;
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -94,13 +100,16 @@ namespace RentIt.View.LaporKerusakan
 
         private void Batal_Click(object sender, EventArgs e)
         {
+            string filePath = dragfile.Items[0].ToString();
+            byte[] fileBytes = File.ReadAllBytes(filePath);
+
+            rusak.InputKerusakan(fileBytes);
+
             this.Hide();
             laporKerusakan2View laporKerusakan2View = new laporKerusakan2View();
             laporKerusakan2View.ShowDialog();
-
-            
-
         }
+
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
