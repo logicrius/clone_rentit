@@ -7,6 +7,14 @@ CREATE TABLE Peminjam (
 	nomor_tlp varchar (12)
 );
 
+CREATE TABLE TableAdmin (
+	nip varchar(10) primary key NOT NULL,
+	email varchar(50) NOT NULL,
+	password VARCHAR(150) NOT NULL,
+	nama varchar(50),
+	nomor_tlp varchar (12)
+);
+
 CREATE TABLE Pengelola_logistik (
 	nip varchar(10) primary key NOT NULL,
 	email varchar(50) NOT NULL,
@@ -52,6 +60,8 @@ CREATE TABLE Pembatalan (
     CONSTRAINT Kerusakan_FK2 FOREIGN KEY (fasilitas_id) REFERENCES Fasilitas (fasilitas_id)
 );
 
-insert into userlogin values ('suryaaulia@student.telkomuniversity.ac.id', '1302210084');
+insert into peminjam values ('1302213045', 'rasjidzz@student.telkomuniversity.ac.id', 'testing','Muhammad Risjad Shidqi Febian', 'Rekayasa Perangkat Lunak', '0821');
+insert into tableadmin values ('1001000', 'aqua@admin.telkomuniversity.ac.id', 'admin', 'Dasep', '0822');
 
-SELECT * FROM rentedBuilding;
+SELECT * FROM tableadmin;
+SELECT * FROM Peminjam;
