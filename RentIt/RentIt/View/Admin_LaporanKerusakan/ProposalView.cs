@@ -65,5 +65,10 @@ namespace RentIt.View.Admin_LaporanKerusakan
             Admin_ProposalView proposalView = new Admin_ProposalView();
             proposalView.Show();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

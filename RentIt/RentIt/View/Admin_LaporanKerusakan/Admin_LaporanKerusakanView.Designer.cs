@@ -154,9 +154,9 @@
             this.Uwang.Location = new System.Drawing.Point(105, 48);
             this.Uwang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Uwang.Name = "Uwang";
-            this.Uwang.Size = new System.Drawing.Size(91, 13);
+            this.Uwang.Size = new System.Drawing.Size(102, 13);
             this.Uwang.TabIndex = 1;
-            this.Uwang.Text = "Rp 500.000.00";
+            this.Uwang.Text = "Rp 1.000.000.00";
             this.Uwang.Click += new System.EventHandler(this.Uwang_Click);
             // 
             // GDku

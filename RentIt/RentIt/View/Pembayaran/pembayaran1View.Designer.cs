@@ -250,9 +250,9 @@
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
             this.label5.Location = new System.Drawing.Point(163, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 17);
+            this.label5.Size = new System.Drawing.Size(97, 17);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Rp 500,000.00";
+            this.label5.Text = "Rp 1.000,000.00";
             // 
             // label4
             // 
@@ -363,7 +363,7 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form1
+            // pembayaran1View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -385,7 +385,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.redBox);
-            this.Name = "Form1";
+            this.Name = "pembayaran1View";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.bottomPanel.ResumeLayout(false);

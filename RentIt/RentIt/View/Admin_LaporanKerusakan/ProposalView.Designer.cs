@@ -266,6 +266,7 @@
             this.label11.Size = new System.Drawing.Size(108, 20);
             this.label11.TabIndex = 12;
             this.label11.Text = "08211882291";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 

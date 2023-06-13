@@ -22,10 +22,10 @@ namespace RentIt.View.Pembatalan_1
         PembatalanModel rusak = new PembatalanModel();
         public Pembatalan1View()
         {
+            InitializeComponent();
             rusak.GetDataFromDatabase();
             Uwang.Text = rusak.facilityPrice.ToString();
             GDku.Text = rusak.facilityName;
-            InitializeComponent();
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)

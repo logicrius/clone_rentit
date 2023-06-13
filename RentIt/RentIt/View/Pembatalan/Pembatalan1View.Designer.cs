@@ -190,9 +190,9 @@ namespace RentIt.View.Pembatalan_1
             this.Uwang.Location = new System.Drawing.Point(26, 46);
             this.Uwang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Uwang.Name = "Uwang";
-            this.Uwang.Size = new System.Drawing.Size(78, 15);
+            this.Uwang.Size = new System.Drawing.Size(87, 15);
             this.Uwang.TabIndex = 1;
-            this.Uwang.Text = "Rp 500.000.00";
+            this.Uwang.Text = "Rp 1.000.000.00";
             this.Uwang.Click += new System.EventHandler(this.Uwang_Click);
             // 
             // GDku
