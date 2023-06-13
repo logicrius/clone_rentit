@@ -40,5 +40,6 @@ namespace RentIt.View.Other
             MenuView mainview = new MenuView();
             mainview.ShowDialog();
         }
+
     }
 }

@@ -8,9 +8,9 @@ namespace RentIt.Model
     internal class Login
     {
         // Syntax untuk di PostgreSQL yang hitung username dan password yang sesuai dengan input.
-        private static string query = "SELECT COUNT(*) FROM userLogin WHERE username = @username AND password = @password";
+        private static string query = "SELECT COUNT(*) FROM Peminjam WHERE email = @email AND password = @password";
         public bool isLogged = true;
-        public void PerformLogin(string username, string password)
+        public void PerformLogin(string email, string password)
         {
             // Menghubungkan program dengan database.
             using (NpgsqlConnection connection = dbConnection.GetConnection())
@@ -19,7 +19,7 @@ namespace RentIt.Model
                 using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                 {
                     // Mencocokkan data username dan
-                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@email", email);
                     // password pada database dengan input user.
                     command.Parameters.AddWithValue("@password", password);
 

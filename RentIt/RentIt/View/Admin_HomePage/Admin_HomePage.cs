@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentIt.View.Admin_LaporanKerusakan;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,14 @@ namespace RentIt.View.Admin_HomePage
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_LaporanKerusakanView viewPage = new Admin_LaporanKerusakanView();
+            viewPage.ShowDialog();
 
         }
     }

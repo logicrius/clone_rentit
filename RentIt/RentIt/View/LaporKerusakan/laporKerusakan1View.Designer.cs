@@ -163,6 +163,9 @@
             this.dragfile.Name = "dragfile";
             this.dragfile.Size = new System.Drawing.Size(468, 147);
             this.dragfile.TabIndex = 0;
+            this.dragfile.SelectedIndexChanged += new System.EventHandler(this.dragfile_SelectedIndexChanged);
+            this.dragfile.DragDrop += new System.Windows.Forms.DragEventHandler(this.dragfile_DragDrop);
+            this.dragfile.DragEnter += new System.Windows.Forms.DragEventHandler(this.dragfile_DragEnter);
             // 
             // docacc
             // 
@@ -198,6 +201,7 @@
             this.Batal.TabIndex = 2;
             this.Batal.Text = "Ajukan Pembatalan";
             this.Batal.UseVisualStyleBackColor = false;
+            this.Batal.Click += new System.EventHandler(this.Batal_Click);
             // 
             // panel4
             // 
@@ -220,6 +224,7 @@
             this.Instruksi.Size = new System.Drawing.Size(262, 17);
             this.Instruksi.TabIndex = 2;
             this.Instruksi.Text = "You can drag and drop files here to add them.";
+            this.Instruksi.Click += new System.EventHandler(this.Instruksi_Click);
             // 
             // pictureBox2
             // 
@@ -231,6 +236,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel3
             // 
@@ -279,6 +285,7 @@
             this.Uwang.Size = new System.Drawing.Size(78, 15);
             this.Uwang.TabIndex = 1;
             this.Uwang.Text = "Rp 500.000.00";
+            this.Uwang.Click += new System.EventHandler(this.Uwang_Click);
             // 
             // GDku
             // 
@@ -290,6 +297,7 @@
             this.GDku.Size = new System.Drawing.Size(158, 20);
             this.GDku.TabIndex = 0;
             this.GDku.Text = "Gedung Kuliah Umum";
+            this.GDku.Click += new System.EventHandler(this.GDku_Click);
             // 
             // Pembatalan
             // 
@@ -344,6 +352,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(444, 84);
             this.panel2.TabIndex = 32;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel1
             // 
@@ -364,6 +373,7 @@
             this.GKU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GKU.TabIndex = 31;
             this.GKU.TabStop = false;
+            this.GKU.Click += new System.EventHandler(this.GKU_Click);
             // 
             // pictureBox7
             // 
@@ -405,6 +415,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "laporKerusakan1View";
             this.Text = "laporKerusakanView";
+            this.Load += new System.EventHandler(this.laporKerusakan1View_Load);
             this.Bawah.ResumeLayout(false);
             this.Bawah.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Twit)).EndInit();

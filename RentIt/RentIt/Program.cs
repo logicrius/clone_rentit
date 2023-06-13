@@ -12,6 +12,7 @@ using Npgsql;
 using RentIt.View.Admin_HomePage;
 using RentIt.View.Admin_Proposal;
 using RentIt.View.Admin_LaporanKerusakan;
+using RentIt.View.Other;
 
 namespace RentIt
 {
@@ -25,7 +26,7 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new MainPageView());
+            Application.Run(new MenuView());
         }
     }
 }

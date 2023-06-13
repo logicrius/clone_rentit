@@ -8,7 +8,6 @@ namespace RentIt.Model
 {
     internal class LaporKerusakan
     {
-        private static String queryPush = "SELECT * FROM ";
-        private static String queryPull = "SELECT * FROM ";
+        private static String queryPullData = "INSERT INTO Kerusakan";
     }
 }

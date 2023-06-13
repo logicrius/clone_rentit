@@ -9,7 +9,7 @@ namespace RentIt.Model
 {
     internal static class dbConnection
     {
-        static string Connection = "Server=localhost; port=5432; user id=postgres; password=adminpbo; database=RentIt";
+        static string Connection = "Server=localhost; port=5432; user id=postgres; password=adminpbo; database=LocalRentIt";
         public static NpgsqlConnection GetConnection()
         {
             NpgsqlConnection connection = new NpgsqlConnection(Connection);
