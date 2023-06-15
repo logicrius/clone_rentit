@@ -88,8 +88,9 @@ namespace RentIt.View.Admin_Proposal
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 string nim = row.Cells["nim"].Value.ToString();
                 string idfasil = row.Cells["fasilitas_id"].Value.ToString();
+                string orderid = row.Cells["order_id"].Value.ToString();
 
-                ProposalView proposalView = new ProposalView(nim, idfasil);
+                ProposalView proposalView = new ProposalView(nim, idfasil,orderid);
                 this.Hide();
                 proposalView.Show();
             }

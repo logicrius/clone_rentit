@@ -189,6 +189,7 @@
             this.Decline.TabIndex = 18;
             this.Decline.Text = "Decline";
             this.Decline.UseVisualStyleBackColor = false;
+            this.Decline.Click += new System.EventHandler(this.Decline_Click);
             // 
             // Approve
             // 
@@ -199,6 +200,7 @@
             this.Approve.TabIndex = 17;
             this.Approve.Text = "Approve";
             this.Approve.UseVisualStyleBackColor = false;
+            this.Approve.Click += new System.EventHandler(this.Approve_Click);
             // 
             // panel2
             // 
@@ -264,9 +266,9 @@
             this.nomortelfonMahasiswa.Location = new System.Drawing.Point(30, 344);
             this.nomortelfonMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nomortelfonMahasiswa.Name = "nomortelfonMahasiswa";
-            this.nomortelfonMahasiswa.Size = new System.Drawing.Size(108, 20);
+            this.nomortelfonMahasiswa.Size = new System.Drawing.Size(181, 20);
             this.nomortelfonMahasiswa.TabIndex = 12;
-            this.nomortelfonMahasiswa.Text = "08211882291";
+            this.nomortelfonMahasiswa.Text = "nomor telfon mahasiswa";
             // 
             // jurusanMahasiswa
             // 
@@ -277,9 +279,9 @@
             this.jurusanMahasiswa.Location = new System.Drawing.Point(30, 262);
             this.jurusanMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jurusanMahasiswa.Name = "jurusanMahasiswa";
-            this.jurusanMahasiswa.Size = new System.Drawing.Size(229, 20);
+            this.jurusanMahasiswa.Size = new System.Drawing.Size(144, 20);
             this.jurusanMahasiswa.TabIndex = 11;
-            this.jurusanMahasiswa.Text = "S1 Rekayasa Perangkat Lunak";
+            this.jurusanMahasiswa.Text = "jurusan mahasiswa";
             // 
             // nimMahasiswa
             // 
@@ -290,8 +292,9 @@
             this.nimMahasiswa.Location = new System.Drawing.Point(30, 190);
             this.nimMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nimMahasiswa.Name = "nimMahasiswa";
-            this.nimMahasiswa.Size = new System.Drawing.Size(0, 20);
+            this.nimMahasiswa.Size = new System.Drawing.Size(34, 20);
             this.nimMahasiswa.TabIndex = 10;
+            this.nimMahasiswa.Text = "nim";
             // 
             // namaMahasiswa
             // 
