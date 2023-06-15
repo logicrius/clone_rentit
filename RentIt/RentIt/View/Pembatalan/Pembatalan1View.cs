@@ -1,6 +1,7 @@
 ﻿using RentIt.View.Facility_Page;
 using RentIt.View.Menu;
 using RentIt.View.Other;
+using RentIt.View.Pembayaran_1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -208,5 +209,17 @@ namespace RentIt.View.Pembatalan_1
             }
         }
 
+        private void Batal_Click(object sender, EventArgs e)
+        {
+            if (dragfile.Items.Count == 0)
+            {
+                MessageBox.Show("Masukkan file dukungan terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            this.Hide();
+            otherView form = new otherView();
+            form.ShowDialog();
+        }
     }
 }

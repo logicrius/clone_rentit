@@ -12,13 +12,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RentIt.Models;    
+using System.Drawing.Drawing2D;
 
 namespace RentIt.View.RentPage
 {
     public partial class RentPageView : Form
     {
-        private FileModel fileModel;
         public RentPageView()
         {
             InitializeComponent();
@@ -88,10 +87,10 @@ namespace RentIt.View.RentPage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (var file in dragfile.Items)
+            if (dragfile.Items.Count == 0)
             {
-                string filePath = Path.Combine(Directory.GetCurrentDirectory(), file.ToString());
-                //fileModel.SaveFileToDatabase(filePath); // Menyimpan file ke database
+                MessageBox.Show("Masukkan file dukungan terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             this.Hide();
@@ -187,4 +186,3 @@ namespace RentIt.View.RentPage
         }
     }
 }
-

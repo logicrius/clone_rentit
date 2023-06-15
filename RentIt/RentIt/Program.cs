@@ -26,7 +26,7 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new MainPageView());
+            Application.Run(new RentPageView());
         }
     }
 }

@@ -269,6 +269,7 @@ namespace RentIt.View.Pembatalan_1
             this.Batal.TabIndex = 2;
             this.Batal.Text = "Ajukan Pembatalan";
             this.Batal.UseVisualStyleBackColor = false;
+            this.Batal.Click += new System.EventHandler(this.Batal_Click);
             // 
             // panel4
             // 

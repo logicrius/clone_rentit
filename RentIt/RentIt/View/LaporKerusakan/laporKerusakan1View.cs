@@ -1,5 +1,6 @@
 ﻿using RentIt.View.Menu;
 using RentIt.View.Other;
+using RentIt.View.Pembayaran_1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,12 +96,15 @@ namespace RentIt.View.LaporKerusakan
 
         private void Batal_Click(object sender, EventArgs e)
         {
+            if (dragfile.Items.Count == 0)
+            {
+                MessageBox.Show("Masukkan file dukungan terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             this.Hide();
-            laporKerusakan2View laporKerusakan2View = new laporKerusakan2View();
-            laporKerusakan2View.ShowDialog();
-
-            
-
+            otherView form = new otherView();
+            form.ShowDialog();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

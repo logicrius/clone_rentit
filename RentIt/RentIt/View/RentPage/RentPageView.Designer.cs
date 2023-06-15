@@ -85,7 +85,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(473, 84);
+            this.label1.Location = new System.Drawing.Point(545, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 29);
             this.label1.TabIndex = 2;
@@ -96,7 +96,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(637, 84);
+            this.label2.Location = new System.Drawing.Point(709, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 29);
             this.label2.TabIndex = 3;
@@ -106,7 +106,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(1016, 96);
+            this.textBox1.Location = new System.Drawing.Point(1088, 84);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(291, 17);
@@ -120,7 +120,7 @@
             this.redBox.Location = new System.Drawing.Point(0, 0);
             this.redBox.Margin = new System.Windows.Forms.Padding(4);
             this.redBox.Name = "redBox";
-            this.redBox.Size = new System.Drawing.Size(1707, 41);
+            this.redBox.Size = new System.Drawing.Size(1812, 41);
             this.redBox.TabIndex = 10;
             // 
             // panel1
@@ -128,7 +128,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.SystemColors.Window;
-            this.panel1.Location = new System.Drawing.Point(329, 461);
+            this.panel1.Location = new System.Drawing.Point(401, 449);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 228);
@@ -156,17 +156,17 @@
             this.bottomPanel.Controls.Add(this.pictureBox8);
             this.bottomPanel.Controls.Add(this.pictureBox10);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(0, 1335);
+            this.bottomPanel.Location = new System.Drawing.Point(0, 1323);
             this.bottomPanel.Margin = new System.Windows.Forms.Padding(4);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(1707, 91);
+            this.bottomPanel.Size = new System.Drawing.Size(1812, 91);
             this.bottomPanel.TabIndex = 17;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = global::RentIt.Properties.Resources.twit;
-            this.pictureBox5.Location = new System.Drawing.Point(1599, 22);
+            this.pictureBox5.Location = new System.Drawing.Point(1704, 22);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 34);
@@ -178,7 +178,7 @@
             // 
             this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.Image = global::RentIt.Properties.Resources.Linked;
-            this.pictureBox6.Location = new System.Drawing.Point(1519, 22);
+            this.pictureBox6.Location = new System.Drawing.Point(1624, 22);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 34);
@@ -190,7 +190,7 @@
             // 
             this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = global::RentIt.Properties.Resources.insta;
-            this.pictureBox7.Location = new System.Drawing.Point(1447, 22);
+            this.pictureBox7.Location = new System.Drawing.Point(1552, 22);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 34);
@@ -202,7 +202,7 @@
             // 
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.Image = global::RentIt.Properties.Resources.face;
-            this.pictureBox8.Location = new System.Drawing.Point(1363, 22);
+            this.pictureBox8.Location = new System.Drawing.Point(1468, 22);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(40, 34);
@@ -224,7 +224,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(803, 84);
+            this.label14.Location = new System.Drawing.Point(875, 72);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 29);
             this.label14.TabIndex = 18;
@@ -234,7 +234,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::RentIt.Properties.Resources.GEDUNG_KULIAH_UMUM;
-            this.pictureBox9.Location = new System.Drawing.Point(329, 215);
+            this.pictureBox9.Location = new System.Drawing.Point(401, 203);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(437, 251);
@@ -245,7 +245,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RentIt.Properties.Resources.PP;
-            this.pictureBox3.Location = new System.Drawing.Point(1396, 82);
+            this.pictureBox3.Location = new System.Drawing.Point(1468, 70);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(51, 46);
@@ -256,7 +256,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RentIt.Properties.Resources.babi;
-            this.pictureBox1.Location = new System.Drawing.Point(292, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(364, 49);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 66);
@@ -273,7 +273,7 @@
             this.roundedPanel2.Controls.Add(this.label11);
             this.roundedPanel2.Controls.Add(this.panel3);
             this.roundedPanel2.Controls.Add(this.label9);
-            this.roundedPanel2.Location = new System.Drawing.Point(329, 758);
+            this.roundedPanel2.Location = new System.Drawing.Point(401, 746);
             this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(1116, 577);
@@ -413,7 +413,7 @@
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.roundedPanel1.Location = new System.Drawing.Point(911, 211);
+            this.roundedPanel1.Location = new System.Drawing.Point(983, 199);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(536, 475);
@@ -516,7 +516,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1728, 785);
+            this.ClientSize = new System.Drawing.Size(1833, 785);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.roundedPanel2);
