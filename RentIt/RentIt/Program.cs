@@ -28,7 +28,11 @@ namespace RentIt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
+<<<<<<< Updated upstream
             Application.Run(new LoginView());
+=======
+            Application.Run(new MenuView());    
+>>>>>>> Stashed changes
         }
     }
 }

@@ -10,22 +10,20 @@ namespace RentIt.Model
 {
     internal class FasilitasModel
     {
-        static string query = "SELECT gambar_fasilitas, desc_fasilitas, nama_fasilitas FROM Fasilitas";
-
-
         public string desc_fasilitas = string.Empty;
         public string nama_fasilitas1 = string.Empty;
         public byte[] gambar_fasilitas;
 
-        public void FasilitasTest()
+        public void FasilitasTest(string facilityName)
         {
-            // Retrieve the necessary data from the database
+            // Retrieve the necessary data from the database based on the facility name
+            string query = "SELECT gambar_fasilitas, desc_fasilitas, nama_fasilitas FROM Fasilitas WHERE nama_fasilitas = @nama_fasilitas";
+
             using (NpgsqlConnection connection = dbConnection.GetConnection())
             {
-
                 using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@nama_fasilitas", nama_fasilitas1);
+                    command.Parameters.AddWithValue("@nama_fasilitas", facilityName);
 
                     using (NpgsqlDataReader reader = command.ExecuteReader())
                     {

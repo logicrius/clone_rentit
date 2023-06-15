@@ -1,4 +1,5 @@
-﻿using RentIt.View.Menu;
+﻿using RentIt.View.Facility_Page;
+using RentIt.View.Menu;
 using RentIt.View.Other;
 using RentIt.View.Pembayaran_1;
 using System;
@@ -8,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,9 @@ namespace RentIt.View.RentPage
 {
     public partial class RentPageView : Form
     {
+        FacilityPageView FacilityView = new FacilityPageView();
+        public string FacilityDesc { get; set; }
+        public Image FacilityImage { get; set; }
         public RentPageView()
         {
             InitializeComponent();
@@ -121,6 +126,18 @@ namespace RentIt.View.RentPage
         private void RentPageView_Load_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
+            label8.Text = FacilityDesc;
+            pictureBox9.Image = FacilityImage;
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

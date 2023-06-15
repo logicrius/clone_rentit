@@ -376,26 +376,24 @@
             // 
             // label_JudulGKU
             // 
-            this.label_JudulGKU.AutoSize = true;
             this.label_JudulGKU.BackColor = System.Drawing.SystemColors.Window;
-            this.label_JudulGKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_JudulGKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_JudulGKU.Location = new System.Drawing.Point(39, 315);
             this.label_JudulGKU.Name = "label_JudulGKU";
-            this.label_JudulGKU.Size = new System.Drawing.Size(142, 13);
+            this.label_JudulGKU.Size = new System.Drawing.Size(142, 36);
             this.label_JudulGKU.TabIndex = 40;
-            this.label_JudulGKU.Text = "Gedung Kuliah Umum (GKU)";
+            this.label_JudulGKU.Text = "Judul";
             this.label_JudulGKU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_JudulGKU.Click += new System.EventHandler(this.label2_Click);
             // 
             // label_Desc_GKU
             // 
             this.label_Desc_GKU.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Desc_GKU.Location = new System.Drawing.Point(39, 351);
+            this.label_Desc_GKU.Location = new System.Drawing.Point(39, 362);
             this.label_Desc_GKU.Name = "label_Desc_GKU";
             this.label_Desc_GKU.Size = new System.Drawing.Size(142, 72);
             this.label_Desc_GKU.TabIndex = 41;
-            this.label_Desc_GKU.Text = "GKU Telkom University memiliki nama lain Gedung Tokong Nanas yang di ambil dari s" +
-    "alah satu laut di nata, pulau terluar di Indonesia.";
+            this.label_Desc_GKU.Text = "Label";
             this.label_Desc_GKU.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // textBox2
@@ -409,67 +407,66 @@
             // 
             // label_Judul_TUCH
             // 
-            this.label_Judul_TUCH.AutoSize = true;
             this.label_Judul_TUCH.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Judul_TUCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Judul_TUCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Judul_TUCH.Location = new System.Drawing.Point(257, 315);
             this.label_Judul_TUCH.Name = "label_Judul_TUCH";
-            this.label_Judul_TUCH.Size = new System.Drawing.Size(169, 13);
+            this.label_Judul_TUCH.Size = new System.Drawing.Size(167, 36);
             this.label_Judul_TUCH.TabIndex = 44;
-            this.label_Judul_TUCH.Text = "Telkom University Convention Hall";
+            this.label_Judul_TUCH.Text = "Judul";
             this.label_Judul_TUCH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Judul_TUCH.Click += new System.EventHandler(this.label4_Click);
             // 
             // label_Judul_auditorium
             // 
-            this.label_Judul_auditorium.AutoSize = true;
             this.label_Judul_auditorium.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Judul_auditorium.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Judul_auditorium.Location = new System.Drawing.Point(537, 315);
+            this.label_Judul_auditorium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Judul_auditorium.Location = new System.Drawing.Point(493, 315);
             this.label_Judul_auditorium.Name = "label_Judul_auditorium";
-            this.label_Judul_auditorium.Size = new System.Drawing.Size(56, 13);
+            this.label_Judul_auditorium.Size = new System.Drawing.Size(140, 36);
             this.label_Judul_auditorium.TabIndex = 45;
-            this.label_Judul_auditorium.Text = "Auditorium";
+            this.label_Judul_auditorium.Text = "Judul";
             this.label_Judul_auditorium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_Judul_StudentCenter
             // 
-            this.label_Judul_StudentCenter.AutoSize = true;
+            this.label_Judul_StudentCenter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Judul_StudentCenter.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Judul_StudentCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Judul_StudentCenter.Location = new System.Drawing.Point(750, 315);
+            this.label_Judul_StudentCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Judul_StudentCenter.Location = new System.Drawing.Point(718, 315);
             this.label_Judul_StudentCenter.Name = "label_Judul_StudentCenter";
-            this.label_Judul_StudentCenter.Size = new System.Drawing.Size(78, 13);
+            this.label_Judul_StudentCenter.Size = new System.Drawing.Size(139, 36);
             this.label_Judul_StudentCenter.TabIndex = 46;
-            this.label_Judul_StudentCenter.Text = "Student Center";
+            this.label_Judul_StudentCenter.Text = "Judul";
             this.label_Judul_StudentCenter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Judul_StudentCenter.Click += new System.EventHandler(this.label6_Click);
             // 
             // label_Desc_TUCH
             // 
             this.label_Desc_TUCH.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Desc_TUCH.Location = new System.Drawing.Point(260, 351);
+            this.label_Desc_TUCH.Location = new System.Drawing.Point(270, 362);
             this.label_Desc_TUCH.Name = "label_Desc_TUCH";
-            this.label_Desc_TUCH.Size = new System.Drawing.Size(153, 63);
+            this.label_Desc_TUCH.Size = new System.Drawing.Size(144, 63);
             this.label_Desc_TUCH.TabIndex = 43;
-            this.label_Desc_TUCH.Text = "Telkom University Convention Hall atau biasa disebut dengan TUCH dengan kapasitas" +
-    " sebesar 800 orang\r\n";
+            this.label_Desc_TUCH.Text = "Label";
+            this.label_Desc_TUCH.Click += new System.EventHandler(this.label_Desc_TUCH_Click);
             // 
             // label_Desc_Auditorium
             // 
             this.label_Desc_Auditorium.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Desc_Auditorium.Location = new System.Drawing.Point(485, 351);
+            this.label_Desc_Auditorium.Location = new System.Drawing.Point(490, 361);
             this.label_Desc_Auditorium.Name = "label_Desc_Auditorium";
-            this.label_Desc_Auditorium.Size = new System.Drawing.Size(148, 83);
+            this.label_Desc_Auditorium.Size = new System.Drawing.Size(143, 83);
             this.label_Desc_Auditorium.TabIndex = 47;
-            this.label_Desc_Auditorium.Text = "Auditorium Damar berdiri di atas lahan seluas 1000 meter persegi, kawasan lahan h" +
-    "ijau, dikelilingi hutan lindung dalam universitas.";
+            this.label_Desc_Auditorium.Text = "Laberl";
             this.label_Desc_Auditorium.Click += new System.EventHandler(this.label_Desc_Auditorium_Click);
             // 
             // label_Desc_StudentCenter
             // 
             this.label_Desc_StudentCenter.BackColor = System.Drawing.SystemColors.Window;
-            this.label_Desc_StudentCenter.Location = new System.Drawing.Point(715, 351);
+            this.label_Desc_StudentCenter.Location = new System.Drawing.Point(715, 361);
             this.label_Desc_StudentCenter.Name = "label_Desc_StudentCenter";
             this.label_Desc_StudentCenter.Size = new System.Drawing.Size(142, 83);
             this.label_Desc_StudentCenter.TabIndex = 48;
