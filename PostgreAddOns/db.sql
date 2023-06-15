@@ -15,12 +15,6 @@ CREATE TABLE TableAdmin (
 	nomor_tlp varchar (12)
 );
 
-CREATE TABLE Pengelola_logistik (
-	nip varchar(10) primary key NOT NULL,
-	email varchar(50) NOT NULL,
-	password VARCHAR(150) NOT NULL,
-	nomor_tlp varchar (12)
-);
 
 CREATE TABLE Fasilitas (
 	fasilitas_id varchar(15) primary key,
