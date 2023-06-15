@@ -61,6 +61,8 @@ CREATE TABLE Pembatalan (
 );
 
 insert into peminjam values ('1302213045', 'rasjidzz@student.telkomuniversity.ac.id', 'testing','Muhammad Risjad Shidqi Febian', 'Rekayasa Perangkat Lunak', '0821');
+insert into peminjam values ('1302213022', 'stevent@student.telkomuniversity.ac.id', 'testing','Stevent Rangga', 'Rekayasa Perangkat Lunak', '0822');
+
 insert into tableadmin values ('1001000', 'aqua@admin.telkomuniversity.ac.id', 'admin', 'Dasep', '0822');
 
 SELECT * FROM tableadmin;
