@@ -46,8 +46,8 @@
             this.roundedPanel1 = new RoundedPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.nimMahasiswa = new System.Windows.Forms.Label();
+            this.namaMahasiswa = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -240,8 +240,8 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.Silver;
             this.roundedPanel1.Controls.Add(this.label11);
             this.roundedPanel1.Controls.Add(this.label10);
-            this.roundedPanel1.Controls.Add(this.label9);
-            this.roundedPanel1.Controls.Add(this.label2);
+            this.roundedPanel1.Controls.Add(this.nimMahasiswa);
+            this.roundedPanel1.Controls.Add(this.namaMahasiswa);
             this.roundedPanel1.Controls.Add(this.label7);
             this.roundedPanel1.Controls.Add(this.label6);
             this.roundedPanel1.Controls.Add(this.label5);
@@ -280,31 +280,30 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "S1 Rekayasa Perangkat Lunak";
             // 
-            // label9
+            // nimMahasiswa
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(30, 190);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "1302213045";
+            this.nimMahasiswa.AutoSize = true;
+            this.nimMahasiswa.BackColor = System.Drawing.Color.Transparent;
+            this.nimMahasiswa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nimMahasiswa.ForeColor = System.Drawing.Color.Black;
+            this.nimMahasiswa.Location = new System.Drawing.Point(30, 190);
+            this.nimMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nimMahasiswa.Name = "nimMahasiswa";
+            this.nimMahasiswa.Size = new System.Drawing.Size(0, 20);
+            this.nimMahasiswa.TabIndex = 10;
             // 
-            // label2
+            // namaMahasiswa
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(30, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Muhammad Risjad Shidqi Febian";
+            this.namaMahasiswa.AutoSize = true;
+            this.namaMahasiswa.BackColor = System.Drawing.Color.Transparent;
+            this.namaMahasiswa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namaMahasiswa.ForeColor = System.Drawing.Color.Black;
+            this.namaMahasiswa.Location = new System.Drawing.Point(30, 108);
+            this.namaMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.namaMahasiswa.Name = "namaMahasiswa";
+            this.namaMahasiswa.Size = new System.Drawing.Size(49, 20);
+            this.namaMahasiswa.TabIndex = 9;
+            this.namaMahasiswa.Text = "nama";
             // 
             // label7
             // 
@@ -417,8 +416,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nimMahasiswa;
+        private System.Windows.Forms.Label namaMahasiswa;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Decline;

@@ -14,9 +14,20 @@ namespace RentIt.View.Admin_LaporanKerusakan
 {
     public partial class ProposalView : Form
     {
+        String nim;
+        String idfasil;
         public ProposalView()
         {
             InitializeComponent();
+        }
+
+        public ProposalView(string nim, string idfasil)
+        {
+            InitializeComponent();
+            this.nim = nim;
+            this.idfasil = idfasil;
+            nimMahasiswa.Text = nim;
+            namaMahasiswa.Text= nim;
         }
 
         private void label1_Click(object sender, EventArgs e)

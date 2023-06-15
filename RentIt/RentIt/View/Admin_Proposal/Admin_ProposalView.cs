@@ -1,4 +1,6 @@
-﻿using RentIt.View.Admin_HomePage;
+﻿using Npgsql;
+using RentIt.Model;
+using RentIt.View.Admin_HomePage;
 using RentIt.View.Admin_LaporanKerusakan;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,26 @@ namespace RentIt.View.Admin_Proposal
 {
     public partial class Admin_ProposalView : Form
     {
+        GetOrderFromDB OrderModel = new GetOrderFromDB();
         public Admin_ProposalView()
         {
             InitializeComponent();
+
+            string connectionString ="Server=localhost; port=5432; user id=postgres; password=belajardatabase; database=RentIt";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM orders";
+                using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, connection))
+                {
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dataGridView1.DataSource = dataTable;
+                }
+            }
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -60,6 +79,19 @@ namespace RentIt.View.Admin_Proposal
             this.Hide();
             ProposalView proposalView = new ProposalView();
             proposalView.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                string nim = row.Cells["nim"].Value.ToString();
+                string idfasil = row.Cells["fasilitas_id"].Value.ToString();
+
+                ProposalView proposalView = new ProposalView(nim, idfasil);
+                proposalView.Show();
+            }
         }
     }
 }

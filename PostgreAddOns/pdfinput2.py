@@ -24,11 +24,11 @@ db_user = "postgres"
 db_password = "belajardatabase"
 
 # Informasi order
-order_id = "order001"
-nim = "1302213045"
-fasilitas_id = "SC0004"
-tanggal_mulai = "2023-06-04"
-tanggal_selesai = "2023-06-05"
+order_id = "order002"
+nim = "1302213022"
+fasilitas_id = "AUDIT0001"
+tanggal_mulai = "2023-06-15"
+tanggal_selesai = "2023-06-17"
 
 # Lokasi file PDF yang ingin diubah menjadi bytea
 pdf_file_path = "Laporan1.pdf"

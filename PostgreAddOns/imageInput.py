@@ -11,15 +11,15 @@ connectToDB = psycopg2.connect(
 
 # Read input image
 # Jika ingin mengganti gambar, ganti "SC.jpg".
-with open('SC.jpg', 'rb') as file:
+with open('AUDIT.jpg', 'rb') as file:
     image_data = file.read()
 
-fasilitas_id = 'SC0004'
-desc_fasilitas = 'Student Center tempat kesekretariatan yang memiiliki fungsi administrasi, konsolidasi, latihan dan penyimpanan barang.'
-harga_fasilitas = 5000000.0
-nama_fasilitas = 'Student Center'
-available_date = [date for date in ['2023-06-04', '2023-06-05', '2023-06-06']]
-ruangan = 'Room 109'
+fasilitas_id = 'AUDIT0001'
+desc_fasilitas = 'AUDIT ADALAH BLA BLA BLA'
+harga_fasilitas = 7000000.0
+nama_fasilitas = 'Auditorium'
+available_date = [date for date in ['2023-06-14', '2023-06-20', '2023-06-26']]
+ruangan = 'Audit'
 
 cursor = connectToDB.cursor()
 
