@@ -4,12 +4,13 @@ from psycopg2.extras import DateRange
 # Connect to PostgreSQL database
 connectToDB = psycopg2.connect(
     host="localhost",
-    database="LocalRentIt",
+    database="RentIt",
     user="postgres",
-    password="adminpbo"
+    password="belajardatabase"
 )
 
 # Read input image
+# Jika ingin mengganti gambar, ganti "SC.jpg".
 with open('SC.jpg', 'rb') as file:
     image_data = file.read()
 

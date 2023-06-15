@@ -267,6 +267,7 @@
     <Compile Include="Model\CariGedung.cs" />
     <Compile Include="Model\dbConnection.cs" />
     <Compile Include="Model\FasilitasModel.cs" />
+    <Compile Include="Model\GetOrderFromDB.cs" />
     <Compile Include="Model\LaporKerusakan.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\PembatalanModel.cs" />
