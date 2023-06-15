@@ -1,4 +1,5 @@
-﻿using RentIt.View.Admin_HomePage;
+﻿using Npgsql;
+using RentIt.View.Admin_HomePage;
 using RentIt.View.Admin_Proposal;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,44 @@ namespace RentIt.View.Admin_LaporanKerusakan
         public ProposalView(string nim, string idfasil)
         {
             InitializeComponent();
+            this.Hide();
             this.nim = nim;
             this.idfasil = idfasil;
             nimMahasiswa.Text = nim;
-            namaMahasiswa.Text= nim;
+
+            // Retrieve data from the database based on nim
+            string connectionString = "Server=localhost; port=5432; user id=postgres; password=belajardatabase; database=RentIt";
+            string query = "SELECT nama, jurusan, nomor_tlp FROM Peminjam WHERE nim = @nim";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@nim", nim);
+                    connection.Open();
+                    using (NpgsqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string nama = reader.GetString(0);
+                            string jurusan = reader.GetString(1);
+                            string nomorTelp = reader.GetString(2);
+                            namaMahasiswa.Text = nama;
+                            jurusanMahasiswa.Text = jurusan;
+                            nomortelfonMahasiswa.Text = nomorTelp;
+                        }
+                        else
+                        {
+                            // Handle the case when no data is found for the given nim
+                            namaMahasiswa.Text = "Data not found";
+                            jurusanMahasiswa.Text = "Data not found";
+                            nomortelfonMahasiswa.Text = "Data not found";
+                        }
+                    }
+                }
+            }
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -75,6 +109,11 @@ namespace RentIt.View.Admin_LaporanKerusakan
             this.Hide();
             Admin_ProposalView proposalView = new Admin_ProposalView();
             proposalView.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

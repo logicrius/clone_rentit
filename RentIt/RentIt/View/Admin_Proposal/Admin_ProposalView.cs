@@ -90,6 +90,7 @@ namespace RentIt.View.Admin_Proposal
                 string idfasil = row.Cells["fasilitas_id"].Value.ToString();
 
                 ProposalView proposalView = new ProposalView(nim, idfasil);
+                this.Hide();
                 proposalView.Show();
             }
         }

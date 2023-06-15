@@ -44,8 +44,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.roundedPanel1 = new RoundedPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.nomortelfonMahasiswa = new System.Windows.Forms.Label();
+            this.jurusanMahasiswa = new System.Windows.Forms.Label();
             this.nimMahasiswa = new System.Windows.Forms.Label();
             this.namaMahasiswa = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -134,6 +134,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 63;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -238,8 +239,8 @@
             // roundedPanel1
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.Silver;
-            this.roundedPanel1.Controls.Add(this.label11);
-            this.roundedPanel1.Controls.Add(this.label10);
+            this.roundedPanel1.Controls.Add(this.nomortelfonMahasiswa);
+            this.roundedPanel1.Controls.Add(this.jurusanMahasiswa);
             this.roundedPanel1.Controls.Add(this.nimMahasiswa);
             this.roundedPanel1.Controls.Add(this.namaMahasiswa);
             this.roundedPanel1.Controls.Add(this.label7);
@@ -254,31 +255,31 @@
             this.roundedPanel1.Size = new System.Drawing.Size(402, 386);
             this.roundedPanel1.TabIndex = 14;
             // 
-            // label11
+            // nomortelfonMahasiswa
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(30, 344);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 20);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "08211882291";
+            this.nomortelfonMahasiswa.AutoSize = true;
+            this.nomortelfonMahasiswa.BackColor = System.Drawing.Color.Transparent;
+            this.nomortelfonMahasiswa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomortelfonMahasiswa.ForeColor = System.Drawing.Color.Black;
+            this.nomortelfonMahasiswa.Location = new System.Drawing.Point(30, 344);
+            this.nomortelfonMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nomortelfonMahasiswa.Name = "nomortelfonMahasiswa";
+            this.nomortelfonMahasiswa.Size = new System.Drawing.Size(108, 20);
+            this.nomortelfonMahasiswa.TabIndex = 12;
+            this.nomortelfonMahasiswa.Text = "08211882291";
             // 
-            // label10
+            // jurusanMahasiswa
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(30, 268);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "S1 Rekayasa Perangkat Lunak";
+            this.jurusanMahasiswa.AutoSize = true;
+            this.jurusanMahasiswa.BackColor = System.Drawing.Color.Transparent;
+            this.jurusanMahasiswa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jurusanMahasiswa.ForeColor = System.Drawing.Color.Black;
+            this.jurusanMahasiswa.Location = new System.Drawing.Point(30, 262);
+            this.jurusanMahasiswa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.jurusanMahasiswa.Name = "jurusanMahasiswa";
+            this.jurusanMahasiswa.Size = new System.Drawing.Size(229, 20);
+            this.jurusanMahasiswa.TabIndex = 11;
+            this.jurusanMahasiswa.Text = "S1 Rekayasa Perangkat Lunak";
             // 
             // nimMahasiswa
             // 
@@ -414,8 +415,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label nomortelfonMahasiswa;
+        private System.Windows.Forms.Label jurusanMahasiswa;
         private System.Windows.Forms.Label nimMahasiswa;
         private System.Windows.Forms.Label namaMahasiswa;
         private System.Windows.Forms.Label label12;
