@@ -1,7 +1,7 @@
-﻿using RentIt.Model;
+﻿using RentIt.View.Facility_Page;
 using RentIt.View.Menu;
 using RentIt.View.Other;
-using RentIt.View.Pembatalan;
+using RentIt.View.Pembayaran_1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,13 +18,10 @@ namespace RentIt.View.Pembatalan_1
 {
     public partial class Pembatalan1View : Form
     {
-        PembatalanModel rusak = new PembatalanModel();
         public Pembatalan1View()
         {
-            rusak.GetDataFromDatabase();
-            Uwang.Text = rusak.facilityPrice.ToString();
-            GDku.Text = rusak.facilityName;
             InitializeComponent();
+            dragfile.DoubleClick += dragfile_DoubleClick;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -41,7 +37,9 @@ namespace RentIt.View.Pembatalan_1
 
         private void dragfile_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            button4.Visible = dragfile.Items.Count == 0;
+            pictureBox2.Visible = dragfile.Items.Count == 0;
+            Instruksi.Visible = dragfile.Items.Count == 0;
         }
 
         private void dragfile_DragDrop(object sender, DragEventArgs e)
@@ -63,6 +61,7 @@ namespace RentIt.View.Pembatalan_1
                 e.Effect = DragDropEffects.Copy;
                 pictureBox2.Visible = false;
                 Instruksi.Visible = false;
+                button4.Visible = false;
             }
 
 
@@ -100,7 +99,9 @@ namespace RentIt.View.Pembatalan_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FacilityPageView mainview = new FacilityPageView();
+            mainview.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -170,21 +171,55 @@ namespace RentIt.View.Pembatalan_1
 
         }
 
-        private void Pembatalan1View_Load(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "All Files (*.*)|*.*";
+                openFileDialog.Multiselect = true;
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string[] files = openFileDialog.FileNames;
+                    foreach (string file in files)
+                    {
+                        if (!dragfile.Items.Contains(Path.GetFileName(file)))
+                        {
+                            dragfile.Items.Add(Path.GetFileName(file));
+                        }
+                    }
+                }
+            }
+
+            button4.Visible = false;
+            pictureBox2.Visible = false;
+            Instruksi.Visible = false;
+        }
+
+        private void dragfile_DoubleClick(object sender, EventArgs e)
+        {
+            if (dragfile.SelectedItem != null)
+            {
+                string selectedFile = dragfile.SelectedItem.ToString();
+                DialogResult result = MessageBox.Show("Hapus File?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    dragfile.Items.Remove(selectedFile);
+                }
+            }
         }
 
         private void Batal_Click(object sender, EventArgs e)
         {
-            string filePath = dragfile.Items[0].ToString();
-            byte[] fileBytes = File.ReadAllBytes(filePath);
-
-            rusak.InputKerusakan(fileBytes);
+            if (dragfile.Items.Count == 0)
+            {
+                MessageBox.Show("Masukkan file dukungan terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             this.Hide();
-            pembatalan2View laporKerusakan2View = new pembatalan2View();
-            laporKerusakan2View.ShowDialog();
+            otherView form = new otherView();
+            form.ShowDialog();
         }
     }
 }

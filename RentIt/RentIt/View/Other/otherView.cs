@@ -1,4 +1,5 @@
-﻿using RentIt.View.LaporKerusakanModel;
+﻿using RentIt.View.LaporKerusakan;
+using RentIt.View.LaporKerusakanModel;
 using RentIt.View.Menu;
 using RentIt.View.Pembatalan_1;
 using System;
@@ -32,6 +33,7 @@ namespace RentIt.View.Other
             this.Hide();
             laporKerusakan1View kerusakan = new laporKerusakan1View();
             kerusakan.ShowDialog();
+            
         }
 
         private void home_Click(object sender, EventArgs e)
